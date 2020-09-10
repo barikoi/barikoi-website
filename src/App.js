@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-function App() {
+import './styles/App.scss';
+
+//import components
+import './components/fontAwesomeIcons';
+import Home from './components/home/Home';
+import ApiPage from './components/products/apiPage/ApiPage';
+import UrbanEnginePage from './components/products/urbanEngine/UrbanEnginePage';
+import Pricing from './components/pricing/Pricing';
+import Rupantor from './components/products/rupantor/Rupantor';
+import SearchHome from './components/searchHome/SearchHome';
+
+// Redux
+import { Provider } from 'react-redux';
+import store from './store';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Fragment>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/api' component={ApiPage} />
+          <Route exact path='/urban-engine' component={UrbanEnginePage} />
+          <Route exact path='/pricing' component={Pricing} />
+          <Route exact path='/rupantor' component={Rupantor} />
+          <Route exact path='/search' component={SearchHome} />
+          <Route
+            exact
+            path='/signup'
+            render={() => (window.location = 'http://dev.barikoi.com/register')}
+          />
+        </Switch>
+      </Fragment>
+    </Provider>
   );
-}
+};
 
 export default App;
