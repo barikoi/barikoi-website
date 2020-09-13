@@ -3,8 +3,6 @@ import { Link, withRouter, useLocation } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Dropdown from './Dropdown';
-
 const Navbar = () => {
   const node = useRef();
   const location = useLocation();
@@ -12,6 +10,7 @@ const Navbar = () => {
   const [dropdownId, setDropdownId] = useState(null);
   const [defaultNav, setDefaultNav] = useState(true);
 
+  //this is to change the nav color
   useEffect(() => {
     const currentPath = location;
 
@@ -25,42 +24,17 @@ const Navbar = () => {
     //console.log('hello default', location.pathname, defaultNav);
   }, [location, defaultNav]);
 
-  // useEffect(() => {
-  //   // add when mounted
-  //   document.addEventListener('mousedown', handleClick);
-  //   // return function to be called when unmounted
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClick);
-  //   };
-  // }, []);
-
   const toggleNav = () => {
     setOpen(!isOpen);
-    console.log('hello nav toggle');
   };
 
   const toggleDropdown = (e) => {
-    console.log(
-      'from toggle dropdown in navbar',
-      e.currentTarget,
-      e.target,
-      e.currentTarget.lastChild
-    );
     e.currentTarget.lastChild.classList.toggle('flip-v');
     if (dropdownId !== e.currentTarget.id) {
       setDropdownId(e.currentTarget.id);
     } else {
       setDropdownId('');
     }
-  };
-
-  const handleClick = (e) => {
-    if (node.current.contains(e.target)) {
-      // inside click
-      return;
-    }
-    // outside click
-    setDropdownId('');
   };
 
   return (
@@ -115,11 +89,6 @@ const Navbar = () => {
                 <Link to='/urban-engine'>Urban Engine</Link>
               </li>
             </div>
-            {/* <Dropdown
-              dropdownId={dropdownId}
-              setDropdownId={setDropdownId}
-              options={[{url:'api', name:'API'},{url:'rupantor', name:'Rupantor'},{url:'', name:'Barikoi 360'},{url:'urban-engine', name:'Urban Engine'}, ]}
-            /> */}
           </li>
 
           <li>

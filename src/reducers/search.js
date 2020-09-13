@@ -39,6 +39,8 @@ export default function (state = initialState, action) {
         autocompleteFlag: false,
         resultFlag: true,
         inputFlag: true,
+        nearby: [], // so that even if we clicked on nearby during search when we
+        //get another new search place the nearby vanishes then
       };
 
     case SET_PREV_PLACE:
@@ -55,6 +57,8 @@ export default function (state = initialState, action) {
         inputFlag: false,
         rgPlace: payload,
         prevPlace: payload,
+        nearby: [],
+        place: null, // to get rg place while searching
       };
 
     case GET_NEARBY:
@@ -74,9 +78,9 @@ export default function (state = initialState, action) {
         ...state,
         places: null,
         place: null,
-        nearby: [],
         autocompleteFlag: false,
         resultFlag: false,
+        rgPlace: null,
       };
 
     default:

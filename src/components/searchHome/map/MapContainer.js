@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getRgPlace } from '../../../actions/search';
 import { setPrevPlace } from '../../../actions/search';
+import { clear } from '../../../actions/search';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-//3rd-party easing functions
-import * as d3 from 'd3-ease';
+import ReactMapGL from 'react-map-gl';
 
 import MapPopup from './MapPopup';
 import MapMarker from './MapMarker';
@@ -18,8 +17,8 @@ const MapContainer = ({
   prevPlace,
   nearby,
   getRgPlace,
-  setPrevPlace,
   rgPlace,
+  clear,
 }) => {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [viewport, setViewport] = useState({
@@ -32,9 +31,6 @@ const MapContainer = ({
   });
 
   useEffect(() => {
-    // if (place) {
-    //   setPrevPlace(place);
-    // }
     setViewport({
       ...viewport,
       zoom: 16,
@@ -50,6 +46,7 @@ const MapContainer = ({
     // eslint-disable-next-line
   }, [place]);
 
+  // to close the popup on Esp button
   useEffect(() => {
     const listener = (e) => {
       if (e.key === 'Escape') {
@@ -68,6 +65,7 @@ const MapContainer = ({
   };
 
   const handleMapClick = (e) => {
+    clear(); // so that the map doesnt change viewport
     getRgPlace(e.lngLat[1], e.lngLat[0]);
   };
 
@@ -128,6 +126,6 @@ const mapStateToProps = (state) => ({
   nearbyMarker: state.search.nearbyMarker,
 });
 
-export default connect(mapStateToProps, { getRgPlace, setPrevPlace })(
+export default connect(mapStateToProps, { clear, getRgPlace, setPrevPlace })(
   MapContainer
 );
