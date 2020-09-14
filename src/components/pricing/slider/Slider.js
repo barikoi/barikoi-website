@@ -160,6 +160,8 @@ class Slider extends Component {
     }
   };
 
+  // added code for collisions
+
   isCollapsed = (tooltip, request) => {
     if (tooltip !== null && request !== null) {
       var object_1 = tooltip.getBoundingClientRect();
@@ -363,6 +365,7 @@ class Slider extends Component {
 
     return (
       <>
+        {/* // made changes in the source code */}
         <div className='requests' id='request'>
           <div className='collide' id='min-request'>
             {min} Requests

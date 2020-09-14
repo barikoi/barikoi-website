@@ -27,11 +27,6 @@ const App = () => {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/rupantor' component={Rupantor} />
           <Route exact path='/search' component={SearchHome} />
-          <Route
-            exact
-            path='/signup'
-            render={() => (window.location = 'http://dev.barikoi.com/register')}
-          />
         </Switch>
       </Fragment>
     </Provider>
