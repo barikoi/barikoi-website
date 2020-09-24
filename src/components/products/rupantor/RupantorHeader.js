@@ -32,7 +32,7 @@ const RupantorHeader = () => {
               </button>
             </a>
 
-            <a href='https://dev.barikoi.com'>
+            <a href='https://developer.barikoi.com'>
               <button class='btn bkoi-btn btn-circle'>Get Started</button>
             </a>
           </div>

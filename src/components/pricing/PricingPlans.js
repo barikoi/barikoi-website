@@ -6,7 +6,10 @@ const PricingPlans = () => {
       <div>
         <div className='heading'>
           <h1>Find the perfect plan for your business</h1>
+          <a style={{color:'#488DE0'}} href="https://docs.barikoi.com/docs/pricing-call/" target="_blank">API Usage and Pricing Clarification</a>
+
         </div>
+
 
         <div className='pricing-plans-grid'>
           <div className='pricing-card'>
@@ -28,7 +31,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='pricing-plan-btn'>
-                <a href='https://dev.barikoi.com'>
+                <a href='https://developer.barikoi.com/'>
                   <button className='btn plan-btn'>Get Started</button>
                 </a>
               </div>
@@ -54,7 +57,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='pricing-plan-btn'>
-                <a href='https://dev.barikoi.com'>
+                <a href='https://developer.barikoi.com/'>
                   <button className='btn plan-btn'>Get Started</button>
                 </a>
               </div>
@@ -80,7 +83,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='pricing-plan-btn'>
-                <a href='https://dev.barikoi.com'>
+                <a href='https://developer.barikoi.com/'>
                   <button className='btn plan-btn'>Get Started</button>
                 </a>
               </div>
@@ -106,7 +109,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='pricing-plan-btn'>
-                <a href='https://dev.barikoi.com'>
+                <a href='https://developer.barikoi.com/'>
                   <button className='btn plan-btn'>Get Started</button>
                 </a>
               </div>
@@ -131,7 +134,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='pricing-plan-btn'>
-                <a href='#'>
+                <a href="mailto:hello@barikoi.com?Subject=Barikoi%20API%20Query" target="_top">
                   <button className='btn plan-btn blue-btn'>
                     Contact Sales
                   </button>

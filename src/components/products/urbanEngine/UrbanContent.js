@@ -121,7 +121,7 @@ const UrbanContent = () => {
           </div>
 
           <div className='api-btn'>
-            <a href='#'>
+            <a href="mailto:hello@barikoi.com?Subject=Barikoi%20Urban%20Solution" target="_top">
               <button className='btn bkoi-btn btn-circle'>Contact Sales</button>
             </a>
           </div>

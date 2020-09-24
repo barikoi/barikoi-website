@@ -233,7 +233,7 @@ const RupantorImage = () => {
                 <p className='p-light-smaller title'>Delivery Address</p>
               </div>
               <p className='p-light-small'>
-                House 34-D, Pallabi, <br />
+                House 34/D, Pallabi, <br />
                 Mirpur, Dhaka
               </p>
 

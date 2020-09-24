@@ -11,7 +11,7 @@ const BkoiBuilt = () => {
         </h3>
 
         <div className='built-btn'>
-          <a href='https://dev.barikoi.com'>
+          <a href='https://developer.barikoi.com/'>
             <button className='btn bkoi-btn btn-circle'>Start Building!</button>
           </a>
         </div>

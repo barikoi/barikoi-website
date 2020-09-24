@@ -25,6 +25,8 @@ const PricingCalculator = () => {
       <div>
         <div className='heading'>
           <h1>Pay for what you use</h1>
+          <a style={{color:'#488DE0'}} href="https://docs.barikoi.com/docs/pricing-call/" target="_blank">API Usage and Pricing Clarification</a>
+          <br/>
           <p className='p-light-small'>Barikoi Price Calculator</p>
         </div>
 
@@ -46,7 +48,7 @@ const PricingCalculator = () => {
           </p>
 
           <div className='pricing-btn'>
-            <a href='#'>
+              <a href="mailto:hello@barikoi.com?Subject=Barikoi%20API%20Query" target="_top">
               <button class='btn bkoi-btn btn-circle'>Contact Sales</button>
             </a>
           </div>

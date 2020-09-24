@@ -104,7 +104,7 @@ const ApiContent = () => {
           </div>
 
           <div className='api-btn'>
-            <a href='https://dev.barikoi.com'>
+            <a href='https://developer.barikoi.com'>
               <button className='btn bkoi-btn btn-circle'>Get Started!</button>
             </a>
           </div>

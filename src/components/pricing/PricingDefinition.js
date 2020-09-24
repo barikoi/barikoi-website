@@ -14,6 +14,8 @@ const PricingDefinition = () => {
           to help.
           <br /> With Guaranteed response times and dedicated assistance,
           <br /> we promise to help and support when you need it.
+          For tech support please mail at <a style={{color: '#488DE0'}} href="mailto:support@barikoi.com?Subject=Barikoi%20Tech%20Support">support@barikoi.com</a>
+
         </p>
       </div>
     </div>

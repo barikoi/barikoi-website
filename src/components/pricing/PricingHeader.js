@@ -9,6 +9,8 @@ const PricingHeader = () => {
           Get 30,000 API Calls FREE every month and build without <br />
           any friction. Pay 15 Tk / 100 call afterwards
         </p>
+        
+        <a style={{color:'#488DE0'}} href="https://docs.barikoi.com/docs/pricing-call/" target="_blank">API Usage and Pricing Clarification</a>
 
         <div className='free-price-content'>
           <div className='pricing-highlight'>

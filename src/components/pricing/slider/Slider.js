@@ -368,10 +368,10 @@ class Slider extends Component {
         {/* // made changes in the source code */}
         <div className='requests' id='request'>
           <div className='collide' id='min-request'>
-            {min} Requests
+            {min} Calls
           </div>
           <div className='' id='max-request'>
-            {max} Requests
+            {max} Calls
           </div>
         </div>
 
@@ -414,7 +414,7 @@ class Slider extends Component {
               className='rangeslider__handle-tooltip'
               id='tooltip'
             >
-              <span>{this.handleFormat(value)} Requests</span>
+              <span>{this.handleFormat(value)} Calls</span>
             </div>
 
             <div className='rangeslider__handle-label'>{handleLabel}</div>

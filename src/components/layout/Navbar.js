@@ -156,7 +156,11 @@ const Navbar = () => {
               }`}
             >
               <li className='dropdown-list'>
-                <a href='https://dev.barikoi.com'>Login</a>
+                <a href='https://developer.barikoi.com/'>Login</a>
+              </li>
+
+              <li className='dropdown-list'>
+                <a href='https://developer.barikoi.com/register'>Signup</a>
               </li>
             </div>
           </li>
