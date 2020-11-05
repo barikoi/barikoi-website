@@ -5,7 +5,7 @@ import { setPrevPlace } from '../../../actions/search';
 import { clear } from '../../../actions/search';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ReactMapGL, { GeolocateControl, NavigationControl, FullscreenControl, ScaleControl} from 'react-map-gl';
+import ReactMapGL, { GeolocateControl, NavigationControl, FullscreenControl, ScaleControl, FlyToInterpolator} from 'react-map-gl';
 
 import MapPopup from './MapPopup';
 import MapMarker from './MapMarker';
@@ -63,7 +63,7 @@ const MapContainer = ({
   useEffect(() => {
     setViewport({
       ...viewport,
-      zoom: 16,
+      zoom: 14,
       latitude:
         (place && parseFloat(place.latitude)) ||
         (prevPlace && prevPlace.latitude) ||
@@ -93,7 +93,7 @@ const MapContainer = ({
   useEffect(()=>{
     isSlide? setViewport({
        ...viewport,
-       width: '100vw'
+       width: '100%'
      }): setViewport({
        ...viewport,
        width: '100%'
@@ -137,9 +137,11 @@ const MapContainer = ({
         mapStyle='https://map.barikoi.com/styles/osm-liberty/style.json'
         onDblClick={handleMapClick}
         doubleClickZoom={false}
+        transitionDuration={30}
+        transitionInterpolator={new FlyToInterpolator({screenSpeed:2, speed:2})} 
       >
 
-        <div style={geolocateStyle}>
+        {/* <div style={geolocateStyle}>
           <GeolocateControl 
           onViewportChange={_onViewportChange}
           positionOptions={{enableHighAccuracy: true}}
@@ -147,7 +149,7 @@ const MapContainer = ({
           auto={true}
           label="Set Current Location"
           />
-        </div>
+        </div> */}
         <div style={fullscreenControlStyle}>
           <FullscreenControl />
         </div>
