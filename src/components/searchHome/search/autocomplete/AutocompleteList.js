@@ -7,8 +7,8 @@ import parse from 'autosuggest-highlight/umd/parse';
 
 const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   let matchPlace =
-    place.place_name || place.business_name
-      ? place.place_name || place.business_name
+  place.business_name || place.place_name
+      ? place.business_name || place.place_name
       : place.Address;
   let addr = place && place.Address.split(',');
   let address = addr.slice(1, addr.length).join(',');
@@ -63,8 +63,8 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
             )}
           </h4>
           <p>
-            {address ? address + ',' : ''}
-            {place.area ? place.area + ',' : ''}
+            {address ? address + ', ' : ''}
+            {place.area ? place.area + ', ' : ''}
             {place.city ? place.city : ''}
           </p>
         </div>

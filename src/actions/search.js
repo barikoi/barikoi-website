@@ -34,7 +34,7 @@ export const getPlace = (uCode) => async (dispatch) => {
       `https://admin.barikoi.xyz:8090/place/${uCode}`
     );
 
-    console.log(res.data);
+    //console.log(res.data);
     dispatch({
       type: GET_PLACE,
       payload: res.data,
