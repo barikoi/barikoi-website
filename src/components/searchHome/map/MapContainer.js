@@ -115,7 +115,7 @@ const MapContainer = ({
       zoom: 13
     })
    }
-
+   //console.log('nearby: ', nearby)
 
   return (
     <div className='map-container'>
@@ -183,10 +183,7 @@ const MapContainer = ({
         {nearby &&
           nearby.map((item) => (
             <MapMarker placeMarker={item} setSelectedPlace={setSelectedPlace} />
-          ))}
-
-        
-        
+          ))}        
       </ReactMapGL>
     </div>
   );

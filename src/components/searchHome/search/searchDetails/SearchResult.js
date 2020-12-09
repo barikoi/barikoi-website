@@ -39,8 +39,8 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
             <div className='content'>
               <h4>
                 {/* {place.place_name ? place.place_name : place.business_name} */}
-                {place.business_name  || place.place_name
-                  ? place.business_name  || place.place_name
+                {place.business_name || place.place_name
+                  ? place.business_name || place.place_name
                   : addr[0]}
               </h4>
               <p>
@@ -48,10 +48,10 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
                 {address1 ? address1 + ',' : ''}{' '}
                 {address2 ? address2 + ',' : ''}
                 {address3 ? address3 + ',' : ''}
-                {place.area}, {place.city} */}   
+                {place.area}, {place.city} */}
                 {address ? address + ', ' : ''}
                 {place.area ? place.area + ', ' : ''}
-                {place.city ? place.city : ' '}
+                {place.city ? place.city : ''}
               </p>
               <p className='postcode'>Postcode: {place.postCode}</p>
               <div className='content-inner'>
@@ -78,6 +78,7 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
                   Healthcare
                 </button>
                 <a
+                  href
                   name='more'
                   onClick={handleMobileClick}
                   className='hide-desktop'
@@ -85,6 +86,7 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
                   More..
                 </a>
                 <a
+                  href
                   name='more'
                   onClick={handleDesktopClick}
                   className='show-desktop hide-mobile'
