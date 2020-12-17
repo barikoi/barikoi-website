@@ -48,7 +48,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='list'>
-                <p className='p-light-smaller'>75,000 API Calls</p>
+                <p className='p-light-smaller'>1,00,000 API Calls</p>
                 <p className='p-light-smaller'>No Daily Limit</p>
                 <p className='p-light-smaller'>Monthly Billing</p>
                 <p className='p-light-smaller'>
@@ -89,7 +89,9 @@ const PricingPlans = () => {
               </div>
             </div>
           </div>
+          </div>
 
+          <div className='pricing-plans-grid'>
           <div className='pricing-card'>
             <div className='pricing-plan-content'>
               <div className='title'>
@@ -100,11 +102,37 @@ const PricingPlans = () => {
               </div>
 
               <div className='list'>
-                <p className='p-light-smaller'>1000,000 API Calls</p>
+                <p className='p-light-smaller'>1,000,000 API Calls</p>
                 <p className='p-light-smaller'>No Daily Limit</p>
                 <p className='p-light-smaller'>Analytics Support</p>
                 <p className='p-light-smaller'>
                   Additional Calls <span>&#2547;</span>0.05
+                </p>
+              </div>
+
+              <div className='pricing-plan-btn'>
+                <a href='https://developer.barikoi.com/'>
+                  <button className='btn plan-btn'>Get Started</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className='pricing-card'>
+            <div className='pricing-plan-content'>
+              <div className='title'>
+                <h2>Growth Plus</h2>
+                <p className='p-light-small'>
+                  <span>&#2547;</span>50000 / mo
+                </p>
+              </div>
+
+              <div className='list'>
+                <p className='p-light-smaller'>2,000,000 API Calls</p>
+                <p className='p-light-smaller'>No Daily Limit</p>
+                <p className='p-light-smaller'>Analytics Support</p>
+                <p className='p-light-smaller'>
+                  Additional Calls <span>&#2547;</span>0.04
                 </p>
               </div>
 
@@ -143,6 +171,7 @@ const PricingPlans = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );
