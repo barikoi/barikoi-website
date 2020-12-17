@@ -102,7 +102,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='list'>
-                <p className='p-light-smaller'>1,000,000 API Calls</p>
+                <p className='p-light-smaller'> 1,000,000 API Calls</p>
                 <p className='p-light-smaller'>No Daily Limit</p>
                 <p className='p-light-smaller'>Analytics Support</p>
                 <p className='p-light-smaller'>
@@ -155,7 +155,7 @@ const PricingPlans = () => {
               </div>
 
               <div className='list'>
-                <p className='p-light-smaller'>5,000,000</p>
+                <p className='p-light-smaller'>5,000,000 API Calls</p>
                 <p className='p-light-smaller'>Dedicated Server</p>
                 <p className='p-light-smaller'>Analytics Support</p>
                 <p className='p-light-smaller'>TBD</p>
