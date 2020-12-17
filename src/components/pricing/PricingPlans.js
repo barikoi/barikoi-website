@@ -150,15 +150,15 @@ const PricingPlans = () => {
                 <h2>Enterprise</h2>
                 <p className='p-light-small'>
                   {' '}
-                  <span>&#2547;</span>Custom / mo
+                  <span>&#2547;</span>TBD
                 </p>
               </div>
 
               <div className='list'>
-                <p className='p-light-smaller'>Custom Limit</p>
+                <p className='p-light-smaller'>5,000,000</p>
                 <p className='p-light-smaller'>Dedicated Server</p>
                 <p className='p-light-smaller'>Analytics Support</p>
-                <p className='p-light-smaller'>Custom API Support</p>
+                <p className='p-light-smaller'>TBD</p>
               </div>
 
               <div className='pricing-plan-btn'>
