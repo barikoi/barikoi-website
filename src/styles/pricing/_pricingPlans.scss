@@ -6,7 +6,8 @@
   .pricing-plans-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
 
     .pricing-card {
       background: rgba(245, 246, 245, 1);
@@ -66,7 +67,7 @@
     height: 100vh;
 
     .pricing-card {
-      padding: 1.2rem 1.35rem !important;
+      padding: 1.2rem 2.5rem !important;
     }
   }
   .pricing-plan-content {
