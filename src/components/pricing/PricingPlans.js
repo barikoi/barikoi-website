@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricingPlans = () => {
   return (
-    <div className='pricing-plans wrapper'>
+    <div className='pricing-plans api-content wrapper'>
       <div>
         <div className='heading'>
           <h1>Find the perfect plan for your business</h1>
