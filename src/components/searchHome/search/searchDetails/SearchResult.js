@@ -30,6 +30,8 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
   place = place || rgPlace;
   let addr = place && place.Address.split(',');
   let address = addr && addr.slice(1, addr.length).join(',');
+  // console.log(' place: ', place)
+  // console.log('address: ', address)
 
   return (
     <Fragment>
@@ -49,7 +51,7 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
                 {address2 ? address2 + ',' : ''}
                 {address3 ? address3 + ',' : ''}
                 {place.area}, {place.city} */}
-                {address ? address + ', ' : ''}
+                {address && address !== ' ' ? address + ', ' : ''}
                 {place.area ? place.area + ', ' : ''}
                 {place.city ? place.city : ''}
               </p>

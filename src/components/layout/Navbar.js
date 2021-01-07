@@ -87,6 +87,7 @@ const Navbar = () => {
                 <Link to='/rupantor'>Rupantor</Link>
                 <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
                 <Link to='/urban-engine'>Urban Engine</Link>
+                {/* <Link to='/verify'>Verify</Link> */}
               </li>
             </div>
           </li>
