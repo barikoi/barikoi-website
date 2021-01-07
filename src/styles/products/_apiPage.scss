@@ -14,6 +14,14 @@
       border-radius: 8px;
     }
   }
+  .header-image-verify {
+    margin-top: 2rem;
+    img {
+      width: 100%;
+
+      max-width: 100%;
+    }
+  }
 
   .api-header-image {
     img {
@@ -152,6 +160,9 @@
     }
     img {
       width: 600px !important;
+    }
+    .header-image-verify {
+      margin-top: 0px !important;
     }
 
     .right-flex {

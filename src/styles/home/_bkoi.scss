@@ -76,6 +76,47 @@
     }
   }
 
+.card {
+    box-shadow: 3px 4px 20px -4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    padding: 1.2rem 0.8rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: black;
+    max-width: 500px;
+
+    &:nth-child(even) .card-image {
+      order: 1;
+    }
+
+    .card-image {
+      order: 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-info {
+      legend {
+        margin-bottom: 10px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        margin-bottom: 15px;
+        color: $dark-grey;
+      }
+
+      a {
+        color: $link;
+      }
+    }
+  }
+
+
   .left-flex {
     order: 2;
     margin-top: 3rem;

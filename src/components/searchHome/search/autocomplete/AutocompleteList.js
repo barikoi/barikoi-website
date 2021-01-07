@@ -10,8 +10,11 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   place.business_name || place.place_name
       ? place.business_name || place.place_name
       : place.Address;
+
   let addr = place && place.Address.split(',');
-  let address = addr.slice(1, addr.length).join(',');
+
+  let address = addr && addr.length > 1 ? addr.slice(1, addr.length).join(',') : addr;
+
 
   const handleClick = (e) => {
     getPlace(place.uCode);
