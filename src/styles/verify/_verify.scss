@@ -2,10 +2,24 @@
     .heading {
         margin-bottom: 2rem;
     }
+    .verify-benefits {
+      img {
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+
+    .verify-benefits-top {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+    .btn-center {
+      text-align: center;
+    }
     .verify-grid {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax( 11rem, 1fr ) );
-        grid-gap: 2rem;
+        grid-gap: 1.8rem;
         margin-bottom: 2rem;
 
         .verify-card {
@@ -69,14 +83,29 @@
               margin-bottom: 2rem;
           }
       }
+      .card-info-why {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .card-image-why {
+        //margin-bottom: 1rem;
+        order: 0;
+        img {
+          width: 90%;
+        }
+      }
 }
 
 .bkoi-verify-page {
     display: grid;    
     // color: $dark-grey;
     grid-template-columns: repeat( auto-fit, minmax( 11rem, 1fr ) );
-    grid-gap: 2rem;
+    grid-gap: 2.5rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
+  }
+  .margin-btm {
+    margin-bottom: 3rem;
   }
   
   @media (min-width: 768px) {
