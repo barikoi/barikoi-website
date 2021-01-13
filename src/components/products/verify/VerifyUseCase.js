@@ -5,9 +5,9 @@ const VerifyUseCase = () => {
         <div className='verify api-content wrapper'>
             <div className='heading'>
                 <h1>Use Case</h1>
-                <p className='p-light-small'>
+                {/* <p className='p-light-small'>
                     Improve user experience and drive engagement for your product
-                </p>
+                </p> */}
             </div>
 
             <div className='bkoi-verify-page'>
@@ -16,7 +16,7 @@ const VerifyUseCase = () => {
                         <img src={require('../../../assets/verify_bkoi-cpv.webp')} alt='' />
                     </div>
                     <div className='card-info'>
-                        <h2>Contact Point Verification</h2>
+                        <h2>Address Verification (KYC)</h2>
                     </div>
                 </div>
 

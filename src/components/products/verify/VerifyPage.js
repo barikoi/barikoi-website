@@ -5,6 +5,8 @@ import VerifyHeader from '../verify/VerifyHeader'
 import Navbar from '../../layout/Navbar'
 import VerifyUseCase from '../verify/VerifyUseCase'
 import VerifyHow from './VerifyHow'
+import VerifyWhy from './VerifyWhy'
+import VerifyBenefits from './VerifyBenefits'
 
 const VerifyPage = () => {
     return (
@@ -14,6 +16,8 @@ const VerifyPage = () => {
                 <VerifyHeader />
                 <VerifyUseCase />
                 <VerifyHow />
+                <VerifyWhy />
+                <VerifyBenefits />
             </div>
         </Fragment>
     )

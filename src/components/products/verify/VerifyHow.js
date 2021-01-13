@@ -5,9 +5,9 @@ const VerifyHow = () => {
         <div className='verify-how api-content wrapper'>
             <div className='heading'>
                 <h1>How Barikoi Verify works</h1>
-                <p className='p-light-small'>
+                {/* <p className='p-light-small'>
                 Back-end Domain Works To Guarantee Maximum Benefit For Our Clients​
-                </p>
+                </p> */}
             </div>
 
             <div className='bkoi-verify-how-page'>
@@ -17,7 +17,7 @@ const VerifyHow = () => {
                     </div>
                     <div className='card-info'>
                         <p>Client’s  Address to
-Barikoi API Validation</p>
+Barikoi System</p>
                     </div>
                 </div>
 

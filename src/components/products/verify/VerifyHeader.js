@@ -7,18 +7,19 @@ const VerifyHeader = () => {
                 <img src={require('../../../assets/verify_header.webp')} alt='' />
             </div>
             <div className='right-flex'>
-                <h1 className='primary-text' style={{ color: 'black' }}>
+                <h2>
                     Verify
-                    <br />
-                    Bangladesh
+                </h2>
+                <h1 className='primary-text' style={{ color: 'black' }}>
+                    Bangladesh's
                     <br />
                     First Real-time
                     <br />
-                    Contact Point Verification
+                    Address Verification
                     <br />
                     Inspection Service
                 </h1>
-                <a href='https://developer.barikoi.com'>
+                <a href="mailto:hello@barikoi.com?Subject=Barikoi%20Verify%20Query" target="_top">
                     <button class='btn bkoi-btn btn-circle'>Contact Us!</button>
                 </a>
             </div>

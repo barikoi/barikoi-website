@@ -1,20 +1,20 @@
-.verify-how {
+.verify-why {
     .heading {
         margin-bottom: 2rem;
     }
-    .verify-how-grid {
+    .verify-why-grid {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax( 11rem, 1fr ) );
         grid-gap: 2rem;
         margin-bottom: 2rem;
 
-        .verify-how-card {
+        .verify-why-card {
 
             background: rgba(245, 246, 245, 1);
             padding: 1.2rem 0.9rem;
             border-radius: 5px;
             box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.15);
-            .verify-how-card-content {
+            .verify-why-card-content {
                 display: flex;
                 flex-direction: column;
                 // width: 20rem;
@@ -65,13 +65,13 @@
       }
 }
 
-.bkoi-verify-how-page {
+.bkoi-verify-why-page {
     display: grid;    
     // color: $dark-grey;
     grid-template-columns: repeat( auto-fit, minmax( 11rem, 1fr ) );
     grid-gap: 2rem;
-    margin-top: 3rem;
     margin-bottom: 3rem;
+    margin-top: 5rem;
   }
   
   @media (min-width: 768px) {
