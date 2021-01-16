@@ -9,6 +9,7 @@ import Home from './components/home/Home';
 import ApiPage from './components/products/apiPage/ApiPage';
 import UrbanEnginePage from './components/products/urbanEngine/UrbanEnginePage';
 import VerifyPage from './components/products/verify/VerifyPage'
+import TracePage from './components/products/trace/TracePage'
 import Pricing from './components/pricing/Pricing';
 import Rupantor from './components/products/rupantor/Rupantor';
 import SearchHome from './components/searchHome/SearchHome';
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path='/api' component={ApiPage} />
           <Route exact path='/urban-engine' component={UrbanEnginePage} />
           <Route exact path='/verify' component={VerifyPage} />
+          <Route exact path='/trace' component={TracePage} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/rupantor' component={Rupantor} />
           <Route exact path='/search' component={SearchHome} />

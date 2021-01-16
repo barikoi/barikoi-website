@@ -88,6 +88,7 @@ const Navbar = () => {
                 <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
                 <Link to='/urban-engine'>Urban Engine</Link>
                 <Link to='/verify'>Verify</Link>
+                <Link to='/trace'>Trace</Link>
               </li>
             </div>
           </li>
