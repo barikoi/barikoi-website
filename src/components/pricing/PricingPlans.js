@@ -6,7 +6,10 @@ const PricingPlans = () => {
       <div>
         <div className='heading'>
           <h1>Find the perfect plan for your business</h1>
-          <a style={{color:'#488DE0'}} href="https://docs.barikoi.com/docs/pricing-call/" target="_blank">API Usage and Pricing Clarification</a>
+          <a style={{ color: '#488DE0' }} href="https://docs.barikoi.com/docs/pricing-call/" target="_blank">
+            <p>API Usage and Pricing Clarification</p>
+          </a>
+          <p style={{ fontSize: '12px' }}>prices are exclusing of VAT and tax</p>
 
         </div>
 
