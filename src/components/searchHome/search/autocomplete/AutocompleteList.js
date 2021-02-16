@@ -10,7 +10,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   place.business_name || place.place_name
       ? place.business_name || place.place_name
       : place.Address;
-  // console.log('place: ', place)
+  console.log('place: ', place)
   let addr = place && place.Address && place.Address !== null ? place.Address.split(',') : place.new_address.split(',');
   // console.log('addr: ', addr)
   let address = addr && addr.length > 1 ? addr.slice(1, addr.length).join(',') : addr.toString();
@@ -55,7 +55,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
           <FontAwesomeIcon icon='map-marker-alt' size='lg' color='black' />
         </div>
 
-        <div className='autocomplete-info'>
+        <div className='autocomplete-info' style={{ lineHeight: '0.8rem' }}>
           <h4>
             {parts.map((p) =>
               p.highlight ? (
@@ -65,10 +65,16 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
               )
             )}
           </h4>
-          <p>
+          <p style={{ fontSize: '12pt' }}>
             {address ? address + ', ' : ''}
             {place.area ? place.area + ', ' : ''}
             {place.city ? place.city : ''}
+          </p>
+          <p style={{ fontSize: '8pt', marginTop: '-4px', backgroundColor: '#454f6314', display: 'inline', padding: '2px 4px 2px 4px', borderRadius: '4px', }}>
+            {place.pType}
+          </p>
+          <p style={{ fontSize: '8pt', marginTop: '-4px', backgroundColor: '#454f6314', display: 'inline', padding: '2px 4px 2px 4px', borderRadius: '4px', marginLeft: '4px'}}>
+            {place.subType}
           </p>
         </div>
       </div>
