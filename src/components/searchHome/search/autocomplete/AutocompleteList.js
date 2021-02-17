@@ -10,7 +10,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   place.business_name || place.place_name
       ? place.business_name || place.place_name
       : place.Address;
-  console.log('place: ', place)
+  // console.log('place: ', place)
   let addr = place && place.Address && place.Address !== null ? place.Address.split(',') : place.new_address.split(',');
   // console.log('addr: ', addr)
   let address = addr && addr.length > 1 ? addr.slice(1, addr.length).join(',') : addr.toString();
