@@ -55,7 +55,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
           <FontAwesomeIcon icon='map-marker-alt' size='lg' color='black' />
         </div>
 
-        <div className='autocomplete-info' style={{ lineHeight: '0.8rem' }}>
+        <div className='autocomplete-info'>
           <h4>
             {parts.map((p) =>
               p.highlight ? (
@@ -65,15 +65,15 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
               )
             )}
           </h4>
-          <p style={{ fontSize: '12pt' }}>
+          <p style={{ fontSize: '12pt', marginTop: '2px' }}>
             {address ? address + ', ' : ''}
             {place.area ? place.area + ', ' : ''}
             {place.city ? place.city : ''}
           </p>
-          <p style={{ fontSize: '8pt', marginTop: '-4px', backgroundColor: '#454f6314', display: 'inline', padding: '2px 4px 2px 4px', borderRadius: '4px', }}>
+          <p className='autocomplete-subtype margin-right-4'>
             {place.pType}
           </p>
-          <p style={{ fontSize: '8pt', marginTop: '-4px', backgroundColor: '#454f6314', display: 'inline', padding: '2px 4px 2px 4px', borderRadius: '4px', marginLeft: '4px'}}>
+          <p className='autocomplete-subtype'>
             {place.subType}
           </p>
         </div>
