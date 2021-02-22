@@ -6,8 +6,6 @@ import { clear } from '../../../actions/search';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactMapGL, { GeolocateControl, NavigationControl, FullscreenControl, ScaleControl, FlyToInterpolator } from 'react-map-gl';
-import Directions from 'react-map-gl-directions'
-import 'react-map-gl-directions/dist/mapbox-gl-directions.css'
 
 import MapPopup from './MapPopup';
 import MapMarker from './MapMarker';
@@ -190,10 +188,6 @@ const MapContainer = ({
           nearby.map((item) => (
             <MapMarker placeMarker={item} setSelectedPlace={setSelectedPlace} />
           ))}  
-        {/* <Directions
-          mapRef={mapRef}
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        /> */}
       </ReactMapGL>
     </div>
   );
