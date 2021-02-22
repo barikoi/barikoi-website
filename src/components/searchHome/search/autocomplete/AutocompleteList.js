@@ -6,21 +6,25 @@ import match from 'autosuggest-highlight/umd/match';
 import parse from 'autosuggest-highlight/umd/parse';
 
 const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
+
   let matchPlace =
   place.business_name || place.place_name
       ? place.business_name || place.place_name
       : place.Address;
-  // console.log('place: ', place)
   let addr = place && place.Address && place.Address !== null ? place.Address.split(',') : place.new_address.split(',');
-  // console.log('addr: ', addr)
-  let address = addr && addr.length > 1 ? addr.slice(1, addr.length).join(',') : addr.toString();
-  // console.log( 'address: ', address );
-
+  let newAddr = addr.filter(value => {
+    // return value !== " "
+    return /\S/.test(value);
+  })
+  let address = newAddr && newAddr.length > 1 ? newAddr.slice(1, newAddr.length).join(',') : newAddr.toString();
+  let sub = place && place.subType ? place.subType.split(',') : null
+  let subTypes = sub.length > 3 ? sub[0]+', '+sub[1]+', '+sub[2] : sub.join(', ')
+ 
   const handleClick = (e) => {
     getPlace(place.uCode);
     //to make the white bg from search-active class inactive
     setTyping(false);
-    setText(matchPlace); // to keep the search result name in the input bar.
+    setText(newMatchPlace); // to keep the search result name in the input bar.
   };
 
   // useEffect(() => {
@@ -46,7 +50,8 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   // };
 
   let matches = match(matchPlace, text);
-  let parts = parse(matchPlace, matches);
+  let newMatchPlace = matchPlace.replace(/,/g, "")
+  let parts = parse(newMatchPlace, matches);
 
   return (
     <li>
@@ -65,10 +70,16 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
               )
             )}
           </h4>
-          <p>
+          <p style={{ fontSize: '12pt', marginTop: '2px' }}>
             {address ? address + ', ' : ''}
             {place.area ? place.area + ', ' : ''}
             {place.city ? place.city : ''}
+          </p>
+          <p className='autocomplete-subtype margin-right-4'>
+            {place.pType}
+          </p>
+          <p className='autocomplete-subtype'>
+            {subTypes}
           </p>
         </div>
       </div>

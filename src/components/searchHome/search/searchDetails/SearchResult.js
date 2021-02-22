@@ -28,10 +28,15 @@ const SearchResult = ({ place, getNearby, resultFlag, rgPlace }) => {
   };
 
   place = place || rgPlace;
-  let addr = place && place.Address.split(',');
-  let address = addr && addr.slice(1, addr.length).join(',');
-  // console.log(' place: ', place)
-  // console.log('address: ', address)
+  // let addr = place && place.Address.split(',');
+  // let address = addr && addr.slice(1, addr.length).join(',');
+
+  let addr = place && place.Address && place.Address.split(',');
+  let newAddr = addr && addr.filter((value) => {
+    // return value !== " "
+    return /\S/.test(value);
+  })
+  let address = newAddr && newAddr.length > 1 ? newAddr.slice(1, newAddr.length).join(',') : newAddr;
 
   return (
     <Fragment>

@@ -3,6 +3,8 @@ import { Link, withRouter, useLocation } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import NavBarProduct from './NavBarProduct'
+
 const Navbar = () => {
   const node = useRef();
   const location = useLocation();
@@ -61,9 +63,8 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`show-desktop hide-mobile ${
-            isOpen ? ' toggle-nav ' : ' '
-          }`}
+          className={`show-desktop hide-mobile ${isOpen ? ' toggle-nav ' : ' '
+            }`}
         >
           <li>
             <div className='nav-list' id='1' onClick={toggleDropdown}>
@@ -77,12 +78,34 @@ const Navbar = () => {
             </div>
 
             <div
-              className={` dropdown-nav ${
-                dropdownId === '1' ? 'open-dropdown ' : 'hide-dropdown'
-              }`}
+              className={` dropdown-nav ${dropdownId === '1' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
               ref={node}
             >
               <li className='dropdown-list'>
+                <div className='nav-product'>
+                  {/* <div className='display-col'>
+
+                    <div className='display-row-margin'>
+                      <NavBarProduct link='/api' title='API' details='Something about this product' />
+                      <NavBarProduct link='/rupantor' title='Rupantor' details='Something about this product' />
+                    </div>
+
+                    <div className='display-row-margin'>
+                      <a href='https://map.barikoi.xyz/'>
+                      <NavBarProduct title='Barikoi 360' details='Something about this product' />
+                      </a>
+                      
+                      <NavBarProduct link='/urban-engine' title='Urban Engine' details='Something about this product' />
+                    </div>
+
+                    <div className='display-row'>
+                      <NavBarProduct link='/verify' title='Verify' details='Something about this product' />
+                      <NavBarProduct link='/trace' title='Trace' details='Something about this product' />
+                    </div>
+
+                  </div> */}
+                </div>
                 <Link to='/api'>API</Link>
                 <Link to='/rupantor'>Rupantor</Link>
                 <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
@@ -104,9 +127,8 @@ const Navbar = () => {
               />
             </div>
             <div
-              className={` dropdown-nav ${
-                dropdownId === '2' ? 'open-dropdown ' : 'hide-dropdown'
-              }`}
+              className={` dropdown-nav ${dropdownId === '2' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
             >
               <li className='dropdown-list'>
                 <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
@@ -126,9 +148,8 @@ const Navbar = () => {
               />
             </div>
             <div
-              className={` dropdown-nav ${
-                dropdownId === '3' ? 'open-dropdown ' : 'hide-dropdown'
-              }`}
+              className={` dropdown-nav ${dropdownId === '3' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
             >
               <li className='dropdown-list'>
                 <Link to='/pricing'>Location API Pricing</Link>
@@ -153,9 +174,8 @@ const Navbar = () => {
               />
             </div>
             <div
-              className={` dropdown-nav ${
-                dropdownId === '5' ? 'open-dropdown ' : 'hide-dropdown'
-              }`}
+              className={` dropdown-nav ${dropdownId === '5' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
             >
               <li className='dropdown-list'>
                 <a href='https://developer.barikoi.com/'>Login</a>

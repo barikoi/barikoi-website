@@ -22,17 +22,17 @@ const BkoiBuilt = () => {
           <div className='company-logo'>
             <img
               src={require('../../assets/company-logos/sheba.webp')}
-              alt=''
+              alt='sheba'
             />
           </div>
           <div className='company-logo'>
             <img
               src={require('../../assets/company-logos/chaldal.webp')}
-              alt=''
+              alt='chaldal'
             />
           </div>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/ajkerdeal.webp')} />
+            <img src={require('../../assets/company-logos/ajkerdeal.webp')} alt='ajkerdeal' />
           </div>
         </div>
 
@@ -40,21 +40,24 @@ const BkoiBuilt = () => {
           <div className='company-logo'>
             <img
               src={require('../../assets/company-logos/styline.webp')}
-              alt=''
+              alt='styline'
             />
           </div>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/easytrax.webp')} />
+            <img src={require('../../assets/company-logos/easytrax.webp')} alt='easytrax'/>
           </div>
 
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/lk.webp')} />
+            <img src={require('../../assets/company-logos/lk.webp')} alt='lk' />
           </div>
         </div>
 
         <div className='logo-block logo-block-3'>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/walletmix.webp')} />
+            <img src={require('../../assets/company-logos/walletmix.webp')} alt='walletmix' />
+          </div>
+          <div className='company-logo'>
+            <img src={require('../../assets/company-logos/hungrynaki.webp')} alt='hungrynaki' />
           </div>
         </div>
       </div>
