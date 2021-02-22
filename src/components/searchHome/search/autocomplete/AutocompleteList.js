@@ -50,7 +50,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   // };
 
   let matches = match(matchPlace, text);
-  let newMatchPlace = matchPlace.replace(/,/g, "")
+  let newMatchPlace = matchPlace && matchPlace.replace(/,/g, "")
   let parts = parse(newMatchPlace, matches);
 
   return (
