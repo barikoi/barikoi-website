@@ -62,11 +62,11 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
 
         <div className='autocomplete-info'>
           <h4>
-            {parts.map((p) =>
+            {parts.map((p, index) =>
               p.highlight ? (
-                <span style={{ fontWeight: '400' }}>{p.text}</span>
+                <span key={index} style={{ fontWeight: '400' }}>{p.text}</span>
               ) : (
-                <span>{p.text}</span>
+                <span key={index}>{p.text}</span>
               )
             )}
           </h4>

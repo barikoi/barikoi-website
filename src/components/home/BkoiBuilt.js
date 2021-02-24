@@ -25,9 +25,10 @@ const BkoiBuilt = () => {
               alt='sheba'
             />
           </div>
-          <div className='company-logo'>
+          <div className='company-logo maya'>
             <img
-              src={require('../../assets/company-logos/chaldal.webp')}
+              style={{ width: '65%' }}
+              src={require('../../assets/company-logos/maya.webp')}
               alt='chaldal'
             />
           </div>
@@ -52,7 +53,7 @@ const BkoiBuilt = () => {
           </div>
         </div>
 
-        <div className='logo-block logo-block-3'>
+        <div className='logo-block logo-block-for-2'>
           <div className='company-logo'>
             <img src={require('../../assets/company-logos/walletmix.webp')} alt='walletmix' />
           </div>
