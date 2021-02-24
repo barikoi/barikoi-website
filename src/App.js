@@ -13,10 +13,12 @@ import TracePage from './components/products/trace/TracePage'
 import Pricing from './components/pricing/Pricing';
 import Rupantor from './components/products/rupantor/Rupantor';
 import SearchHome from './components/searchHome/SearchHome';
+import Privacy from './components/privacy/Privacy';
 
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
+
 
 const App = () => {
   return (
@@ -31,6 +33,7 @@ const App = () => {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/rupantor' component={Rupantor} />
           <Route exact path='/search' component={SearchHome} />
+          <Route exact path='/privacy' component={Privacy} />
         </Switch>
       </Fragment>
     </Provider>

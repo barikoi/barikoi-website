@@ -197,6 +197,19 @@
       width: 100%;
     }
   }
+  .logo-block-for-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+  }
+  .maya {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 65%;
+    }
+  }
 }
 
 @media (min-width: 768px) {
