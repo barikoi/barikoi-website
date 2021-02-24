@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import TraceModal from '../trace/TraceModal'
 
 const TraceHeader = () => {
-    const [tracePopup, toggleTracePopup] = useState(false)
+    // const [tracePopup, toggleTracePopup] = useState(false)
 
-    const handleClick = (e) => {
-        window.scrollTo(0, 0);
-        toggleTracePopup(!tracePopup);
-    };
+    // const handleClick = (e) => {
+    //     window.scrollTo(0, 0);
+    //     toggleTracePopup(!tracePopup);
+    // };
     return (
         <div className='api-page api-header wrapper'>
             <div className='header-image-verify api-header-image'>
@@ -26,14 +26,16 @@ const TraceHeader = () => {
                     <br />
                     Track Anything
                 </h1>
-                <button class='btn bkoi-btn btn-circle' onClick={handleClick}>Get Started!</button>
+                <a href='https://developer.barikoi.com/'>
+                    <button class='btn bkoi-btn btn-circle'>Get Started!</button>
+                </a>
             </div>
-            { tracePopup && (
+            {/* { tracePopup && (
                 <TraceModal
                     tracePopup={tracePopup}
                     toggleTracePopup={toggleTracePopup}
                 />
-            )}
+            )} */}
         </div>
     )
 }
