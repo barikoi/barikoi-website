@@ -45,7 +45,7 @@ const BkoiBuilt = () => {
             />
           </div>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/easytrax.webp')} alt='easytrax'/>
+            <img src={require('../../assets/company-logos/hungrynaki.webp')} alt='hungrynaki'/>
           </div>
 
           <div className='company-logo'>
@@ -55,11 +55,11 @@ const BkoiBuilt = () => {
 
         <div className='logo-block logo-block-for-2'>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/walletmix.webp')} alt='walletmix' />
+            <img src={require('../../assets/company-logos/easytrax.webp')} alt='easytrax' />
           </div>
           <div className='company-logo'>
-            <img src={require('../../assets/company-logos/hungrynaki.webp')} alt='hungrynaki' />
-          </div>
+            <img src={require('../../assets/company-logos/walletmix.webp')} alt='walletmix' />
+          </div>          
         </div>
       </div>
     </div>
