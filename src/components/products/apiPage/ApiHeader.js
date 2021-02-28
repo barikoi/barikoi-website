@@ -9,7 +9,7 @@ const ApiHeader = () => {
 
       <div className='right-flex'>
         <h1>
-          More precise and <br /> The most effiecient <br /> Way to locate.
+          More precise and <br /> The most efficient <br /> Way to locate.
         </h1>
 
         <p className='p-light-small'>
