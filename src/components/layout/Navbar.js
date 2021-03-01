@@ -11,6 +11,8 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [dropdownId, setDropdownId] = useState(null);
   const [defaultNav, setDefaultNav] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
+  const [hoverIndex, setHoverIndex] = useState('')
 
   //this is to change the nav color
   useEffect(() => {
@@ -31,6 +33,7 @@ const Navbar = () => {
   };
 
   const toggleDropdown = (e) => {
+    console.log('id: ', e.target.getAttribute('id'))
     e.currentTarget.lastChild.classList.toggle('flip-v');
     if (dropdownId !== e.currentTarget.id) {
       setDropdownId(e.currentTarget.id);
@@ -38,6 +41,14 @@ const Navbar = () => {
       setDropdownId('');
     }
   };
+  const mouseEnter = (e) => {
+    setIsHovered(true)
+    setHoverIndex(e.target.id)
+  }
+  const mouseLeave = () => {
+    setIsHovered(false)
+    setDropdownId('');
+  }
 
   return (
     <header className={`container ${defaultNav ? '' : 'static-nav'}`}>
@@ -66,9 +77,12 @@ const Navbar = () => {
           className={`show-desktop hide-mobile ${isOpen ? ' toggle-nav ' : ' '
             }`}
         >
-          <li>
-            <div className='nav-list' id='1' onClick={toggleDropdown}>
-              <Link>Products</Link>
+          {/* <li
+            
+          >
+            <div className='nav-list' id='1' onClick={toggleDropdown} onMouseOver={mouseEnter}
+            onMouseLeave={mouseLeave}>
+              <Link id='10'>Products</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
                 size='lg'
@@ -77,13 +91,15 @@ const Navbar = () => {
               />
             </div>
 
-            <div
-              className={` dropdown-nav ${dropdownId === '1' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
-              ref={node}
-            >
-              <li className='dropdown-list'>
-                {/* <div className='nav-product'>
+            {
+              isHovered && hoverIndex === '10' &&
+              <div
+                className={` dropdown-nav ${dropdownId === '10' || hoverIndex === '10' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
+                //ref={node}
+              >
+                <li className='dropdown-list'>
+                  {/* <div className='nav-product'>
                   <div className='display-col'>
 
                     <div className='display-row-margin'>
@@ -106,19 +122,28 @@ const Navbar = () => {
 
                   </div>
                 </div> */}
-                <Link to='/api'>API</Link>
-                <Link to='/rupantor'>Rupantor</Link>
-                <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
-                <Link to='/urban-engine'>Urban Engine</Link>
-                <Link to='/verify'>Verify</Link>
-                <Link to='/trace'>Trace</Link>
-              </li>
-            </div>
-          </li>
+                  {/* <Link to='/api'>API</Link>
+                  <Link to='/rupantor'>Rupantor</Link>
+                  <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
+                  <Link to='/urban-engine'>Urban Engine</Link>
+                  <Link to='/verify'>Verify</Link>
+                  <Link to='/trace'>Trace</Link> */}
 
-          <li>
-            <div className='nav-list' id='2' onClick={toggleDropdown}>
-              <Link>Developer</Link>
+                  
+                    
+                  
+
+                {/* </li>
+              </div>
+            }
+          </li> */} 
+
+          <li 
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}            
+          >
+            <div className='nav-list' id='1' onClick={toggleDropdown}>
+              <Link id='1'>Products</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
                 size='lg'
@@ -126,20 +151,57 @@ const Navbar = () => {
                 className='transition-rotate nav-icon hide-desktop'
               />
             </div>
-            <div
-              className={` dropdown-nav ${dropdownId === '2' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
-            >
-              <li className='dropdown-list'>
+            {
+              isHovered &&
+                <div
+                  className={` dropdown-nav ${dropdownId === '1' || hoverIndex === '1' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
+                >
+                  {/* <li className='dropdown-list'>
+                    <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
+                    <a href='https://medium.com/@barikoibd'>Tutorial</a>
+                  </li> */}
+
+                  <li className='dropdown-list'>
+                    <Link to='/api'>API</Link>
+                    <Link to='/rupantor'>Rupantor</Link>
+                    <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
+                    <Link to='/urban-engine'>Urban Engine</Link>
+                    <Link to='/verify'>Verify</Link>
+                    <Link to='/trace'>Trace</Link>
+                  </li>
+                </div>
+            }
+
+
+            {/* <div className='nav-list' id='2'>
+              <Link id='10'>Developer</Link>
+              <FontAwesomeIcon
+                icon='chevron-circle-down'
+                size='lg'
+                color='black'
+                className='transition-rotate nav-icon hide-desktop'
+              />
+            </div>
+            { isProductHovered &&
+              <div
+              className={`dropdown-nav  open-dropdown`}
+              >
+              <div className='dropdown-list'>
                 <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
                 <a href='https://medium.com/@barikoibd'>Tutorial</a>
-              </li>
+              </div>
             </div>
+            } */}
           </li>
 
-          <li>
-            <div className='nav-list' id='3' onClick={toggleDropdown}>
-              <Link>Pricing</Link>
+
+          <li 
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}            
+          >
+            <div className='nav-list' id='2' onClick={toggleDropdown}>
+              <Link id='2'>Developer</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
                 size='lg'
@@ -147,14 +209,45 @@ const Navbar = () => {
                 className='transition-rotate nav-icon hide-desktop'
               />
             </div>
-            <div
-              className={` dropdown-nav ${dropdownId === '3' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
-            >
-              <li className='dropdown-list'>
-                <Link to='/pricing'>Location API Pricing</Link>
-              </li>
+            {
+              isHovered &&
+                <div
+                  className={` dropdown-nav ${dropdownId === '2' || hoverIndex === '2' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
+                >
+                  <li className='dropdown-list'>
+                    <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
+                    <a href='https://medium.com/@barikoibd'>Tutorial</a>
+                  </li>
+                </div>
+            }
+          </li>
+
+
+          <li
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave} 
+          >
+            <div className='nav-list' id='3' onClick={toggleDropdown}>
+              <Link id='3'>Pricing</Link>
+              <FontAwesomeIcon
+                icon='chevron-circle-down'
+                size='lg'
+                color='black'
+                className='transition-rotate nav-icon hide-desktop'
+              />
             </div>
+            {
+              isHovered && 
+              <div
+              className={` dropdown-nav ${dropdownId === '3' || hoverIndex === '3' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
+              >
+                <li className='dropdown-list'>
+                  <Link to='/pricing'>Location API Pricing</Link>
+                </li>
+            </div>
+            }
           </li>
 
           <li>
@@ -163,9 +256,12 @@ const Navbar = () => {
             </div>
           </li>
 
-          <li>
+          <li
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+          >
             <div className='nav-list' id='5' onClick={toggleDropdown}>
-              <Link>Account</Link>
+              <Link id='5'>Account</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
                 size='lg'
@@ -173,18 +269,21 @@ const Navbar = () => {
                 className='transition-rotate nav-icon hide-desktop'
               />
             </div>
-            <div
-              className={` dropdown-nav ${dropdownId === '5' ? 'open-dropdown ' : 'hide-dropdown'
+            {
+              isHovered && 
+              <div
+              className={` dropdown-nav ${dropdownId === '5' || hoverIndex === '5' ? 'open-dropdown ' : 'hide-dropdown'
                 }`}
-            >
-              <li className='dropdown-list'>
-                <a href='https://developer.barikoi.com/'>Login</a>
-              </li>
+              >
+                <li className='dropdown-list'>
+                  <a href='https://developer.barikoi.com/'>Login</a>
+                </li>
 
-              <li className='dropdown-list'>
-                <a href='https://developer.barikoi.com/register'>Signup</a>
-              </li>
-            </div>
+                <li className='dropdown-list'>
+                  <a href='https://developer.barikoi.com/register'>Signup</a>
+                </li>
+              </div>
+            }
           </li>
         </ul>
       </nav>
