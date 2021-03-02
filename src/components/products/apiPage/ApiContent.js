@@ -19,7 +19,7 @@ const ApiContent = () => {
   };
 
   return (
-    <div className=' api-content wrapper'>
+    <div className='api-content wrapper'>
       <div className='heading'>
         <h1>With Barikoi API</h1>
         <p className='p-light-small'>
