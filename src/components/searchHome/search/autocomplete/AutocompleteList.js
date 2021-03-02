@@ -24,7 +24,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
     getPlace(place.uCode);
     //to make the white bg from search-active class inactive
     setTyping(false);
-    setText(newMatchPlace); // to keep the search result name in the input bar.
+    setText(matchPlace); // to keep the search result name in the input bar.
   };
 
   // useEffect(() => {
@@ -51,7 +51,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
 
   let matches = match(matchPlace, text);
   let newMatchPlace = matchPlace && matchPlace.replace(/,/g, "")
-  let parts = parse(newMatchPlace, matches);
+  let parts = parse(matchPlace, matches);
 
   return (
     <li>
