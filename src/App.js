@@ -14,7 +14,7 @@ import Pricing from './components/pricing/Pricing';
 import Rupantor from './components/products/rupantor/Rupantor';
 import SearchHome from './components/searchHome/SearchHome';
 import Privacy from './components/privacy/Privacy';
-import AboutUs from './components/aboutUs/AboutUs';
+import OurTeam from './components/aboutUs/OurTeam';
 
 // Redux
 import { Provider } from 'react-redux';
@@ -35,7 +35,7 @@ const App = () => {
           <Route exact path='/rupantor' component={Rupantor} />
           <Route exact path='/search' component={SearchHome} />
           <Route exact path='/privacy' component={Privacy} />
-          <Route exact path='/aboutus' component={AboutUs} />
+          <Route exact path='/ourteam' component={OurTeam} />
         </Switch>
       </Fragment>
     </Provider>

@@ -7,6 +7,7 @@ import BkoiBusiness from './BkoiBusiness';
 import BkoiDevelopers from './BkoiDevelopers';
 import BkoiBuilt from './BkoiBuilt';
 import Navbar from '../layout/Navbar';
+import FeaturedOn from './FeaturedOn';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <BkoiBusiness />
       <BkoiDevelopers />
       <BkoiBuilt />
+      <FeaturedOn />
     </Fragment>
   );
 };

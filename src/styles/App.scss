@@ -142,6 +142,13 @@ body {
   .open-dropdown {
     animation: fade-in 0.5s linear;
   }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 }
 
 @media (min-width: 1900px) {
