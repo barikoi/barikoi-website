@@ -255,8 +255,9 @@ const Navbar = () => {
               <Link to='/search'>Search</Link>
             </div>
           </li>
-
-          <li
+          
+          {/* About us */}
+          {/* <li
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave} 
           >
@@ -281,7 +282,7 @@ const Navbar = () => {
                 </li>
             </div>
             }
-          </li>
+          </li> */}
 
           <li
             onMouseEnter={mouseEnter}
