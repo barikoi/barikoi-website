@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 import ApiHeader from '../apiPage/ApiHeader';
 import ApiContent from '../apiPage/ApiContent';
 import Navbar from '../../layout/Navbar';
+import Footer from '../../footer/Footer';
 
 const ApiPage = () => {
   return (
@@ -13,6 +14,7 @@ const ApiPage = () => {
         <ApiHeader />
         <ApiContent />
       </div>
+      <Footer />
     </Fragment>
   );
 };

@@ -7,6 +7,7 @@ import AdminTeam from './Teams/AdminTeam';
 import ProductTeam from './Teams/ProductTeam';
 import TechTeam from './Teams/TechTeam';
 import OperationsTeam from './Teams/OperationsTeam';
+import Footer from '../footer/Footer';
 
 const OurTeam = () => {
     return (
@@ -19,6 +20,7 @@ const OurTeam = () => {
                 <TechTeam />
                 <OperationsTeam />
             </div>
+            <Footer />
         </React.Fragment>
     );
 };

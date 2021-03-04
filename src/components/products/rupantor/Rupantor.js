@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import RupantorHeader from './RupantorHeader';
 import RupantorContent from './RupantorContent';
 import Navbar from '../../layout/Navbar';
+import Footer from '../../footer/Footer';
 
 const Rupantor = () => {
   return (
@@ -11,6 +12,7 @@ const Rupantor = () => {
       <div className='container'>
         <RupantorContent />
       </div>
+      <Footer />
     </Fragment>
   );
 };

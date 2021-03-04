@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../footer/Footer'
 
 //import components
 import Navbar from '../../layout/Navbar'
@@ -13,6 +14,7 @@ const TracePage = () => {
                 <TraceHeader />
                 <TracePriceTier />
             </div>
+            <Footer />
         </React.Fragment>
     )
 }

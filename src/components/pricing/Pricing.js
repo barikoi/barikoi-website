@@ -5,6 +5,7 @@ import PricingDefinition from './PricingDefinition';
 import PricingCalculator from './PricingCalculator';
 import PricingFooter from './PricingFooter';
 import Navbar from '../layout/Navbar';
+import Footer from '../footer/Footer';
 
 const Pricing = () => {
   return (
@@ -17,6 +18,7 @@ const Pricing = () => {
         <PricingCalculator />
       </div>
       <PricingFooter />
+      <Footer />
     </>
   );
 };

@@ -7,6 +7,7 @@ import VerifyUseCase from '../verify/VerifyUseCase'
 import VerifyHow from './VerifyHow'
 import VerifyWhy from './VerifyWhy'
 import VerifyBenefits from './VerifyBenefits'
+import Footer from '../../footer/Footer'
 
 const VerifyPage = () => {
     return (
@@ -19,6 +20,7 @@ const VerifyPage = () => {
                 <VerifyWhy />
                 <VerifyBenefits />
             </div>
+            <Footer />
         </Fragment>
     )
 }
