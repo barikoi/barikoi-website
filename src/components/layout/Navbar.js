@@ -255,13 +255,14 @@ const Navbar = () => {
               <Link to='/search'>Search</Link>
             </div>
           </li>
-
-          <li
+          
+          {/* About us */}
+          {/* <li
             onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
+            onMouseLeave={mouseLeave} 
           >
             <div className='nav-list' id='5' onClick={toggleDropdown}>
-              <Link id='5'>Account</Link>
+              <Link id='5'>About Us</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
                 size='lg'
@@ -273,6 +274,33 @@ const Navbar = () => {
               isHovered && 
               <div
               className={` dropdown-nav ${dropdownId === '5' || hoverIndex === '5' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
+              > 
+                <li className='dropdown-list'>
+                    <Link to='/ourteam'>Our Team</Link>
+                    <Link to='/company'>Company</Link>
+                </li>
+            </div>
+            }
+          </li> */}
+
+          <li
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+          >
+            <div className='nav-list' id='6' onClick={toggleDropdown}>
+              <Link id='6'>Account</Link>
+              <FontAwesomeIcon
+                icon='chevron-circle-down'
+                size='lg'
+                color='black'
+                className='transition-rotate nav-icon hide-desktop'
+              />
+            </div>
+            {
+              isHovered && 
+              <div
+              className={` dropdown-nav ${dropdownId === '6' || hoverIndex === '6' ? 'open-dropdown ' : 'hide-dropdown'
                 }`}
               >
                 <li className='dropdown-list'>

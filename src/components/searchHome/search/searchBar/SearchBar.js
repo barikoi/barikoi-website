@@ -22,6 +22,8 @@ const SearchBar = ({
   const [isTyping, setTyping] = useState(false);
 
   const onChange = (query) => {
+    
+    // e.preventDefault();
     if (query) {
       setText(query);
       setTyping(true);
@@ -32,6 +34,11 @@ const SearchBar = ({
       clear();
     }
   };
+  const onKeyPress = e => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); 
+    }
+  }
 
   return (
     <Fragment>
@@ -52,6 +59,7 @@ const SearchBar = ({
                 placeholder='Search Location.'
                 value={text}
                 onChange={(e) => onChange(e.target.value)}
+                onKeyPress={e => onKeyPress(e)}
               />
 
               {(isTyping && autocompleteFlag) || resultFlag ? (

@@ -104,6 +104,19 @@
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
+  .bkoi-verify-page-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .bkoi-verify-page-2 {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 11rem, 1fr ) );
+    grid-gap: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
   .margin-btm {
     margin-bottom: 3rem;
   }

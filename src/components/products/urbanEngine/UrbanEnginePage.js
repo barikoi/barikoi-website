@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 import UrbanHeader from './UrbanHeader';
 import UrbanContent from './UrbanContent';
 import Navbar from '../../layout/Navbar';
+import Footer from '../../footer/Footer';
 
 const UrbanEnginePage = () => {
   return (
@@ -13,6 +14,7 @@ const UrbanEnginePage = () => {
         <UrbanHeader />
         <UrbanContent />
       </div>
+      <Footer />
     </Fragment>
   );
 };

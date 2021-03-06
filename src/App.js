@@ -14,17 +14,20 @@ import Pricing from './components/pricing/Pricing';
 import Rupantor from './components/products/rupantor/Rupantor';
 import SearchHome from './components/searchHome/SearchHome';
 import Privacy from './components/privacy/Privacy';
-import AboutUs from './components/aboutUs/AboutUs';
+import OurTeam from './components/aboutUs/OurTeam';
 
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
+import TermsAndServices from './components/termsAndServices/TermsAndServices';
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 
 const App = () => {
   return (
     <Provider store={store}>
       <Fragment>
+        <ScrollToTop />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/api' component={ApiPage} />
@@ -35,7 +38,8 @@ const App = () => {
           <Route exact path='/rupantor' component={Rupantor} />
           <Route exact path='/search' component={SearchHome} />
           <Route exact path='/privacy' component={Privacy} />
-          <Route exact path='/aboutus' component={AboutUs} />
+          <Route exact path='/ourteam' component={OurTeam} />
+          <Route exact path='/termsandservices' component={TermsAndServices} />
         </Switch>
       </Fragment>
     </Provider>
