@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const PolicyPages = () => {
     return (
         <div style={{...contactInfoContainer}}>
-            <a href='https://docs.google.com/document/d/1mGgc1zwtMHVdvzNcQPDuoNOOhjwzOs2CM1ktp95yZhs/edit'>
+            <Link to='/termsandservices'>
                 <h3 style={{...fontSize24}}>Terms and Services</h3>
-            </a>
+            </Link>
             <Link to='/privacy'>
                 <h3 style={{...fontSize24}}>Privacy Policy</h3>
             </Link>

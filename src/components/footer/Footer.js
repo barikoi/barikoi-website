@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactInfo from './ContactInfo';
 import ContactUs from './ContactUs';
+import FollowUsOn from './FollowUsOn';
 import PolicyPages from './PolicyPages';
 
 const Footer = () => {
@@ -11,7 +12,8 @@ const Footer = () => {
                     <div className='bkoi-verify-page'>
                         <ContactInfo />
                         <PolicyPages />
-                        <ContactUs />
+                        {/* <ContactUs /> */}
+                        <FollowUsOn />
                     </div>
                 </div>
             </div>

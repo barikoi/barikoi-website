@@ -1,35 +1,12 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-
-const ContactInfo = () => {
+const FollowUsOn = () => {
     return (
         <div style={{ ...contactInfoContainer }}>
             <div style={{...header}}>
-                <h3>Address</h3>
+                <h3>Follow us on</h3>
             </div>
-            <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
-                    <FontAwesomeIcon icon='map-marker-alt' size='lg' color='white' />
-                </div>                
-                <p>Wasi Tower, House 572/K, Matikata Main Road, Matikata, Dhaka Cantonment, Dhaka</p>
-            </div>
-            <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
-                    <FontAwesomeIcon icon={faMobileAlt} size='lg' color='white' />
-                </div>
-                <p>+880 1708549077</p>
-            </div>
-            <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
-                    <FontAwesomeIcon icon={faEnvelope} size='lg' color='white' />
-                </div>
-                <a href='mailto:hello@barikoi.com'>
-                    <p>hello@barikoi.com</p>
-                </a>
-            </div>
-                {/* <div style={{ ...info }}>
+                <div style={{ ...info }}>
                     <a style={{ ...socialIconSize }} href='https://www.instagram.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
                         <img width='100%' src={require('../../assets/social-icons/instagram.png')} alt='bkoi-facebook'/>
                     </a>
@@ -39,7 +16,7 @@ const ContactInfo = () => {
                     <a style={{ ...socialIconSize }} href='https://www.linkedin.com/company/barikoi/' target='_blank' rel='noopener noreferrer'>
                         <img width='100%' src={require('../../assets/social-icons/linkedin-icon.png')} alt='bkoi-facebook'/>
                     </a>
-                </div> */}
+                </div>
             </div>
     );
 };
@@ -71,4 +48,4 @@ const header = {
     marginBottom: '2rem'
 }
 
-export default ContactInfo;
+export default FollowUsOn;

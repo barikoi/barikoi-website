@@ -96,7 +96,7 @@ export const Profiles = [
                 name: 'Md Hafizur Rahman Milon',
                 designation: 'Jr Software Engineer',
                 type: 'Front-End',
-                //linkedin: '#',
+                linkedin: 'https://www.linkedin.com/in/hafizur-milon-8618931a1/',
                 imgSrc: require('../../assets/team-profile-photos/test-profile-photo.jpg')
             },
             {
