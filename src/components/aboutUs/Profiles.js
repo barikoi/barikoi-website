@@ -21,7 +21,7 @@ export const Profiles = [
                 founder: 'Co-Founder',
                 designation: 'Chief Technology Officer',
                 linkedin: 'https://www.linkedin.com/in/sadman-sakib-676001a3/',
-                imgSrc: require('../../assets/team-profile-photos/sakib_2.webp')
+                imgSrc: require('../../assets/team-profile-photos/sakib.webp')
             },
         ]
     },
@@ -43,7 +43,7 @@ export const Profiles = [
                 name: 'Md. Apon Chowdhury',
                 designation: 'Jr Product Manager',
                 linkedin: 'https://www.linkedin.com/in/md-apon-chowdhury-12b964b2/',
-                imgSrc: require('../../assets/team-profile-photos/apon_2.webp')
+                imgSrc: require('../../assets/team-profile-photos/apon.webp')
             },
         ]
     },
