@@ -3,19 +3,24 @@ import { Link } from 'react-router-dom'
 
 const PolicyPages = () => {
     return (
-        <div style={{...contactInfoContainer}}>
-            <Link to='/termsandservices'>
-                <h3 style={{...fontSize24}}>Terms and Services</h3>
-            </Link>
-            <Link to='/privacy'>
-                <h3 style={{...fontSize24}}>Privacy Policy</h3>
-            </Link>
-            <Link to='/'>
-                <h3 style={{...fontSize24}}>Our Team</h3>
-            </Link>
-            <Link to='/'>
-                <h3 style={{...fontSize24}}>Our Company</h3>
-            </Link>
+        <div className='footer-center'>
+            <div style={{ ...contactInfoContainer }}>
+                {/* <div style={{...header}}>
+                    <p style={{ fontSize: '16px', fontWeight: '500' }}>Resources</p>
+                </div> */}
+                <Link to='/termsandservices'>
+                    <p style={{...fontSize24}}>Terms and Services</p>
+                </Link>
+                <Link to='/privacy'>
+                    <p style={{...fontSize24}}>Privacy Policy</p>
+                </Link>
+                <Link to='/ourteam'>
+                    <p style={{...fontSize24}}>Our Team</p>
+                </Link>
+                <Link to='/'>
+                    <p style={{...fontSize24}}>Our Company</p>
+                </Link>
+            </div>
         </div>
     );
 };
@@ -24,12 +29,18 @@ const contactInfoContainer = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    fontSize: '18px'
+    fontSize: '16px',
+    // color: '#ffffff'
 }
 
 const fontSize24 = {
-    fontSize: '24px',
-    marginBottom: '1rem'
+    fontSize: '16px',
+    marginBottom: '0.7rem'
+}
+
+const header = {
+    marginBottom: '1rem',
+    fontSize: '20px'
 }
 
 export default PolicyPages;

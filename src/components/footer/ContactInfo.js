@@ -6,9 +6,9 @@ import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 const ContactInfo = () => {
     return (
         <div style={{ ...contactInfoContainer }}>
-            <div style={{...header}}>
-                <h3>Address</h3>
-            </div>
+            {/* <div style={{...header}}>
+                <p style={{ fontSize: '16px' }}>Find us on</p>
+            </div> */}
             <div style={{ ...info }}>
                 <div style={{...margin1rem}}>
                     <FontAwesomeIcon icon='map-marker-alt' size='lg' color='white' />
@@ -55,7 +55,7 @@ const info = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: '2rem',
+    marginBottom: '0.7rem',
 }
 
 const margin1rem = {
@@ -68,7 +68,8 @@ const socialIconSize = {
 }
 
 const header = {
-    marginBottom: '2rem'
+    marginBottom: '1rem',
+    fontSize: '20px'
 }
 
 export default ContactInfo;

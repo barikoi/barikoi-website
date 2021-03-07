@@ -257,7 +257,7 @@ const Navbar = () => {
           </li>
           
           {/* About us */}
-          {/* <li
+          <li
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave} 
           >
@@ -278,11 +278,11 @@ const Navbar = () => {
               > 
                 <li className='dropdown-list'>
                     <Link to='/ourteam'>Our Team</Link>
-                    <Link to='/company'>Company</Link>
+                    {/* <Link to='/company'>Company</Link> */}
                 </li>
             </div>
             }
-          </li> */}
+          </li>
 
           <li
             onMouseEnter={mouseEnter}
