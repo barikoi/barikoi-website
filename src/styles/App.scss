@@ -149,6 +149,15 @@ body {
     justify-content: center;
     margin-bottom: 5rem;
   }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-center {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1900px) {

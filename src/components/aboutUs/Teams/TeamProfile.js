@@ -34,13 +34,14 @@ const container = {
     flexDirection: 'column',
     // justifyContent: 'center',
     alignItems: 'center',
+    color: '#000'
     // padding: '20px'
     // marginLeft: '50px'
 }
 
 const aTag = {
     textDecoration: 'none',
-    color: '#000000'
+    color: '#000'
 }
 
 const image = {
@@ -53,8 +54,11 @@ const details = {
     // width: '100%',
     width: '250px',
     textAlign: 'center',
-    //background: '#19FFB6',
-    background: '#2DDBAC',
+    // background: '#19FFB6',
+    // background: '#2DDBAC',
+    // background: 'linear-gradient(to right, #00c6ff, #0072ff)',
+    // background: 'linear-gradient(94deg, #3cb4be 0, #43de7f 97%)',
+    background: '#68d8d6',
     borderRadius: '6px',
     marginTop: '40px',
     padding: '15px 10px 15px 10px'
