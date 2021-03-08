@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, withRouter, useLocation } from 'react-router-dom';
+import { Link, withRouter, useLocation, Redirect } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -277,8 +277,9 @@ const Navbar = () => {
                 }`}
               > 
                 <li className='dropdown-list'>
-                    <Link to='/ourteam'>Our Team</Link>
-                    {/* <Link to='/company'>Company</Link> */}
+                    <Link to='/ourteam' onClick={() => { window.location.href = '/ourteam' }}>Our Team</Link>
+                  {/* <div onClick={() => { window.location.href = '/ourteam' }}>Our team</div> */}
+                  <Link to='/ourcompany'>Company</Link>
                 </li>
             </div>
             }

@@ -6,10 +6,11 @@ const TeamProfile = ({
     designation,
     type,
     linkedin,
-    imgSrc
+    imgSrc,
+    keyIndex
 }) => {
     return (
-        <div style={{ ...container}}>
+        <div key={keyIndex} style={{ ...container}}>
             <div style={{ ...image}}>
                 <img style={{borderRadius: '50%'}} width='100%' src={imgSrc} alt = ''/>
             </div>

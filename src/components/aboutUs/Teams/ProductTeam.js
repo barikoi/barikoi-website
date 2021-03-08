@@ -18,7 +18,7 @@ const ProductTeam = () => {
             }            
         }
     })
-
+    console.log('product team', Members)
     return (
         <div className='verify about-content wrapper'>
             <div className='heading'>

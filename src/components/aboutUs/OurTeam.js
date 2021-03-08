@@ -10,6 +10,7 @@ import OperationsTeam from './Teams/OperationsTeam';
 import Footer from '../footer/Footer';
 
 const OurTeam = () => {
+    console.log('check render')
     return (
         <React.Fragment>
             <Navbar />
