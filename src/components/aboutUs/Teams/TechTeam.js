@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 import { Profiles } from '../Profiles'
 import TeamProfile from './TeamProfile'
-
+const Members = [];
 const TechTeam = () => {
-    // const [test, setTest] = useState('');
-    let Members = [], size, title
-    Profiles.map(profile => {
+    // const [test, setTest] = useState([]);
+    
+    let title
+    const profiles = Profiles
+    profiles.map(profile => {
+        
 
         if (profile.team === 'Tech Team') {
             title = profile.team
-            if (profile.members.length % 2 === 0) {
-                size = 4
-            } else {
-                size = 3
-            }
+            // if (profile.members.length % 2 === 0) {
+            //     size = 4
+            // } else {
+            //     size = 3
+            // }
             while (profile.members.length > 0) {
-                Members.push(profile.members.splice(0, size))
-            }            
+                Members.push(profile.members.splice(0, 3))
+            }
         }
+        
     })
-    // Members.map(member => {
-    //     member.length === 1 ? 
-    //         setTest('')
-    // })
     return (
         <div className='verify about-content wrapper'>
             <div className='heading'>
                 <h1>{ title }</h1>
             </div>           
-                {
+                {  
                     Members.map(member => {
                         return (
                             <div className={`${member.length === 1 ? 'bkoi-verify-page-1' : member.length === 2 ? 'bkoi-verify-page-2' : 'bkoi-verify-page'}`}>

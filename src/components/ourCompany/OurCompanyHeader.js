@@ -12,7 +12,7 @@ const OurCompanyHeader = () => {
                     </div>
                 </div>
                 <div className='api-page api-header wrapper'>
-                    <div className='header-image-verify api-header-image'>
+                    <div className='header-image-verify'>
                         <img src={require('../../assets/ourCompany/1st-Page-Pic.jpg')} alt='' />
                     </div>
                     <div className='right-flex'>

@@ -277,7 +277,7 @@ const Navbar = () => {
                 }`}
               > 
                 <li className='dropdown-list'>
-                    <Link to='/ourteam' onClick={() => { window.location.href = '/ourteam' }}>Our Team</Link>
+                    <Link to='/ourteam'>Our Team</Link>
                   {/* <div onClick={() => { window.location.href = '/ourteam' }}>Our team</div> */}
                   <Link to='/ourcompany'>Our Company</Link>
                 </li>

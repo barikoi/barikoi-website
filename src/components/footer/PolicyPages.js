@@ -15,8 +15,11 @@ const PolicyPages = () => {
                     <p style={{...fontSize24}}>Privacy Policy</p>
                 </Link>
                 {/* <Link to='/ourteam'> */}
-                    <p onClick={() => {window.location.href='/ourteam'}} style={{...fontSize24}}>Our Team</p>
+                    {/* <p onClick={() => {window.location.href='/ourteam'}} style={{...fontSize24}}>Our Team</p> */}
                 {/* </Link> */}
+                <Link to='/ourteam'>
+                    <p style={{...fontSize24}}>Our Team</p>
+                </Link>
                 <Link to='/ourcompany'>
                     <p style={{...fontSize24}}>Our Company</p>
                 </Link>

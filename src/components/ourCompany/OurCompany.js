@@ -4,6 +4,7 @@ import Footer from '../footer/Footer'
 import OurCompanyHeader from './OurCompanyHeader';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
+import BkoiDataPointSummary from './BkoiDataPointSummary';
 
 const OurCompany = () => {
     return (
@@ -11,8 +12,10 @@ const OurCompany = () => {
             <Navbar />
             <div className='container'>
                 <OurCompanyHeader />
+                <BkoiDataPointSummary />
                 <SecondSection />
                 <ThirdSection />
+                
             </div>
             <Footer />
         </React.Fragment>

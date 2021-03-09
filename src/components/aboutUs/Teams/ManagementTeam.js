@@ -2,23 +2,25 @@ import React from 'react';
 import { Profiles } from '../Profiles'
 import TeamProfile from './TeamProfile'
 
-const ManagementTeam = () => {
-    let Members = [], size, title
-    Profiles.map(profile => {
+const Members = [];
 
+const ManagementTeam = () => {
+    const profiles = Profiles;
+    let title
+    profiles.map(profile => {
+        
         if (profile.team === 'Management') {
             title = profile.team
-            if (profile.members.length % 2 === 0) {
-                size = 4
-            } else {
-                size = 3
-            }
+            // if (profile.members.length % 2 === 0) {
+            //     size = 4
+            // } else {
+            //     size = 3
+            // }
             while (profile.members.length > 0) {
-                Members.push(profile.members.splice(0, size))
-            }            
+                Members.push(profile.members.splice(0, 3))
+            }
         }
-    })
-    
+    })   
     return (
         <div className='verify about-content wrapper'>
             <div className='heading'>
