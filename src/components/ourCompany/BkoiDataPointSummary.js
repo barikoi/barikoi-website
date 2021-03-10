@@ -2,22 +2,22 @@ import React from 'react';
 
 const BkoiDataPointSummary = () => {
     return (
-        <div className='api-content wrapper'>
+        <div className='api-content-80vh wrapper'>
             <div className='heading'>
                 <h1>Barikoi Data Point Summary​</h1>
             </div>
-            <div class="section group">
-                <div class="col span_1_of_3">
+            <div className="section group margin-top-3rem">
+                <div className="col span_1_of_3">
                     <h1>600K+</h1>
-                    <p>Point of interest</p>
+                    <p style={{fontSize: '24px', fontWeight: '500'}}>Point of Interest</p>
                 </div>
-                <div class="col span_1_of_3">
+                <div className="col span_1_of_3">
                     <h1>269K+</h1>
-                    <p>Holdings added</p>
+                    <p style={{fontSize: '24px',  fontWeight: '500'}}>Holdings Added</p>
 	            </div>
-                <div class="col span_1_of_3">
+                <div className="col span_1_of_3">
                     <h1>64</h1>
-                    <p>District added on landmark level</p>
+                    <p style={{fontSize: '24px',  fontWeight: '500'}}>Districts on Landmark Level</p>
 	            </div>
             </div>
 

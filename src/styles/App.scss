@@ -122,8 +122,11 @@ body {
     margin-bottom: 1rem;
   }
   p {
-    color: #2ddbac;
+    color: #32BF72;
   }
+}
+.margin-1rem {
+  margin-top: 2rem;
 }
 .col:first-child { margin-left: 0; }
 
@@ -147,6 +150,9 @@ body {
 @media only screen and (max-width: 768px) {
 	.col {  margin: 1% 0 1% 0%; margin-bottom: 2rem; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .margin-top-3rem {
+    margin-top: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
