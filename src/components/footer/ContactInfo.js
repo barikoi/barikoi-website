@@ -9,38 +9,27 @@ const ContactInfo = () => {
             {/* <div style={{...header}}>
                 <p style={{ fontSize: '16px' }}>Find us on</p>
             </div> */}
-            <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
+            <div style={{ ...addressInfo }}>
+                <div style={{ ...margin1rem, ...marginTop5px }}>
                     <FontAwesomeIcon icon='map-marker-alt' size='lg' color='white' />
-                </div>                
+                </div>
                 <p>Wasi Tower, House 572/K, Matikata Main Road, Matikata, Dhaka Cantonment, Dhaka</p>
             </div>
             <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
+                <div style={{ ...margin1rem }}>
                     <FontAwesomeIcon icon={faMobileAlt} size='lg' color='white' />
                 </div>
                 <p>+880 1708549077</p>
             </div>
             <div style={{ ...info }}>
-                <div style={{...margin1rem}}>
+                <div style={{ ...margin1rem }}>
                     <FontAwesomeIcon icon={faEnvelope} size='lg' color='white' />
                 </div>
                 <a href='mailto:hello@barikoi.com'>
                     <p>hello@barikoi.com</p>
                 </a>
             </div>
-                {/* <div style={{ ...info }}>
-                    <a style={{ ...socialIconSize }} href='https://www.instagram.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
-                        <img width='100%' src={require('../../assets/social-icons/instagram.png')} alt='bkoi-facebook'/>
-                    </a>
-                    <a style={{ ...socialIconSize }} href='https://www.facebook.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
-                        <img width='100%' src={require('../../assets/social-icons/facebook.png')} alt='bkoi-facebook'/>
-                    </a>
-                    <a style={{ ...socialIconSize }} href='https://www.linkedin.com/company/barikoi/' target='_blank' rel='noopener noreferrer'>
-                        <img width='100%' src={require('../../assets/social-icons/linkedin-icon.png')} alt='bkoi-facebook'/>
-                    </a>
-                </div> */}
-            </div>
+        </div>
     );
 };
 
@@ -58,18 +47,17 @@ const info = {
     marginBottom: '0.7rem',
 }
 
+const addressInfo = {
+    display: 'flex',
+    flexDirection: 'row',
+    marginBottom: '0.7rem',
+}
 const margin1rem = {
     marginRight: '20px'
 }
 
-const socialIconSize = {
-    width: '30px',
-    marginRight: '10px'
-}
-
-const header = {
-    marginBottom: '1rem',
-    fontSize: '20px'
+const marginTop5px = {
+    marginTop: '5px'
 }
 
 export default ContactInfo;

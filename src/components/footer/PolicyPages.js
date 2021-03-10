@@ -14,10 +14,13 @@ const PolicyPages = () => {
                 <Link to='/privacy'>
                     <p style={{...fontSize24}}>Privacy Policy</p>
                 </Link>
+                {/* <Link to='/ourteam'> */}
+                    {/* <p onClick={() => {window.location.href='/ourteam'}} style={{...fontSize24}}>Our Team</p> */}
+                {/* </Link> */}
                 <Link to='/ourteam'>
                     <p style={{...fontSize24}}>Our Team</p>
                 </Link>
-                <Link to='/'>
+                <Link to='/ourcompany'>
                     <p style={{...fontSize24}}>Our Company</p>
                 </Link>
             </div>
@@ -35,7 +38,9 @@ const contactInfoContainer = {
 
 const fontSize24 = {
     fontSize: '16px',
-    marginBottom: '0.7rem'
+    marginBottom: '0.7rem',
+    color: '#fff',
+    cursor: 'pointer'
 }
 
 const header = {

@@ -21,6 +21,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import TermsAndServices from './components/termsAndServices/TermsAndServices';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import OurCompany from './components/ourCompany/OurCompany';
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
           <Route exact path='/privacy' component={Privacy} />
           <Route exact path='/ourteam' component={OurTeam} />
           <Route exact path='/termsandservices' component={TermsAndServices} />
+          <Route exact path='/ourcompany' component={OurCompany} />
         </Switch>
       </Fragment>
     </Provider>
