@@ -4,18 +4,18 @@ const FollowUsOn = () => {
     return (
         <div className='footer-center'>
             <div style={{ ...contactInfoContainer }}>
-                <div style={{...header}}>
-                    <p style={{fontSize: '16px'}}>Follow us on</p>
+                <div style={{ ...header }}>
+                    <p style={{ fontSize: '16px' }}>Follow us on</p>
                 </div>
                 <div style={{ ...info }}>
-                    <a style={{ ...socialIconSize }} href='https://www.instagram.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
-                        <img width='100%' src={require('../../assets/social-icons/instagram.png')} alt='bkoi-facebook'/>
-                    </a>
                     <a style={{ ...socialIconSize }} href='https://www.facebook.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
                         <img width='100%' src={require('../../assets/social-icons/facebook.png')} alt='bkoi-facebook'/>
                     </a>
+                    <a style={{ ...socialIconSize }} href='https://www.instagram.com/barikoibd/' target='_blank' rel='noopener noreferrer'>
+                        <img width='100%' src={require('../../assets/social-icons/instagram.png')} alt='bkoi-instagram'/>
+                    </a>
                     <a style={{ ...socialIconSize }} href='https://www.linkedin.com/company/barikoi/' target='_blank' rel='noopener noreferrer'>
-                        <img width='100%' src={require('../../assets/social-icons/linkedin-icon.png')} alt='bkoi-facebook'/>
+                        <img width='100%' src={require('../../assets/social-icons/linkedin-icon.png')} alt='bkoi-linkedin'/>
                     </a>
                 </div>
                 <div style={{ width: '130px' }}>
@@ -39,7 +39,8 @@ const info = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: '1rem',
+    marginBottom: '0.5rem',
+    padding: '2px'
 }
 
 const margin1rem = {
@@ -48,12 +49,13 @@ const margin1rem = {
 
 const socialIconSize = {
     width: '30px',
-    marginRight: '10px'
+    marginRight: '18px'
 }
 
 const header = {
     marginBottom: '0.7rem',
     fontSize: '20px'
 }
+
 
 export default FollowUsOn;

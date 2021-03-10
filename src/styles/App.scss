@@ -135,6 +135,30 @@ body {
   justify-content: center;
 }
 
+/*  COLUMN SETUP  */
+.col-footer {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #32BF72;
+  }
+}
+.margin-1rem {
+  margin-top: 2rem;
+}
+.col-footer:first-child { margin-left: 0; }
+
+.width-130px {
+  width: 130px;
+}
+.group-footer { zoom:1; /* For IE 6/7 */ }
+
 /*  GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
