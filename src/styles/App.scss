@@ -169,11 +169,14 @@ body {
 .span_3_of_3 { width: 100%; }
 .span_2_of_3 { width: 66.13%; }
 .span_1_of_3 { width: 32.26%; }
+.span_1_of_2-feturedon {
+	width: 49.2%;
+}
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 768px) {
 	.col {  margin: 1% 0 1% 0%; margin-bottom: 2rem; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2-feturedon { width: 100%; }
   .margin-top-3rem {
     margin-top: 3rem;
   }

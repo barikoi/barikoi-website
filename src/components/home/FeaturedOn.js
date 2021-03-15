@@ -7,7 +7,7 @@ const FeaturedOn = () => {
                 <h1>We were featured on</h1>
             </div>
             <div className='section group'>
-                <div className='col span_1_of_3 grid-center'>
+                <div className='col span_1_of_2-feturedon grid-center'>
                     <div style={{ ...image }}>
 
                         <a
@@ -18,7 +18,7 @@ const FeaturedOn = () => {
                         </a>
                     </div>
                     </div>
-                    <div className='col span_1_of_3 grid-center'>
+                    <div className='col span_1_of_2-feturedon grid-center'>
                         <div style={{ ...image }}>
                             <a
                                 href='https://futurestartup.com/2020/12/16/10-powerful-founders-interviews-on-starting-up-and-building-a-business-from-scratch/?utm_content=buffer411fa&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer'
@@ -29,7 +29,7 @@ const FeaturedOn = () => {
 
                         </div>
                     </div>
-                    <div className='col span_1_of_3 grid-center'>
+                    {/* <div className='col span_1_of_3 grid-center'>
                         <div style={{ ...image }}>
                             <a
                                 href='https://www.grameenphone.com/about/media-center/press-release/grameenphone-accelerator-receives-batch-4-batch-3-departs'
@@ -38,7 +38,7 @@ const FeaturedOn = () => {
                                 <img width='100%' src={require('../../assets/featuredOn/gp_acc.png')} alt='barikoi-featured-on-gp-accelerator' />
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
             </div >
