@@ -113,13 +113,13 @@ export const Profiles = [
                 linkedin: 'https://www.linkedin.com/in/ashraful-islam-b442641bb/',
                 imgSrc: require('../../assets/team-profile-photos/ashraful.webp')
             },
-            {
-                name: 'Isfath Afrin',
-                designation: 'Software Quality Assurance',
-                type: 'Engineer',
-                linkedin: 'https://www.linkedin.com/in/isfath-afrin-822587178/',
-                imgSrc: require('../../assets/team-profile-photos/toma.webp')
-            },
+            // {
+            //     name: 'Isfath Afrin',
+            //     designation: 'Software Quality Assurance',
+            //     type: 'Engineer',
+            //     linkedin: 'https://www.linkedin.com/in/isfath-afrin-822587178/',
+            //     imgSrc: require('../../assets/team-profile-photos/toma.webp')
+            // },
         ]
     },
     {
