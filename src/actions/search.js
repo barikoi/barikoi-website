@@ -74,7 +74,7 @@ export const getRgPlace = (latitude, longitude) => async (dispatch) => {
       `https://admin.barikoi.xyz:8090/reverse/without/auth?latitude=${latitude}&longitude=${longitude}`
     );
 
-    console.log(res.data[0]);
+    // console.log(res.data[0]);
     dispatch({
       type: GET_RG_PLACE,
       payload: res.data[0],

@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { Popup } from 'react-map-gl';
 
 const MapPopup = ({ selectedPlace, setSelectedPlace }) => {
-  console.log('selectedPlace: ', selectedPlace)
+  // console.log('selectedPlace: ', selectedPlace)
   return (
     <Fragment>
       {selectedPlace && (

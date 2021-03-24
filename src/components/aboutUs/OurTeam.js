@@ -8,10 +8,8 @@ import ProductTeam from './Teams/ProductTeam';
 import TechTeam from './Teams/TechTeam';
 import OperationsTeam from './Teams/OperationsTeam';
 import Footer from '../footer/Footer';
-import Test from './Test';
 
 const OurTeam = () => {
-    console.log('check render')
     return (
         <React.Fragment>
             <Navbar />

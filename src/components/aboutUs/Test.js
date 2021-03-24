@@ -5,10 +5,10 @@ import TeamProfile from './Teams/TeamProfile'
 const Test = () => {
     const duplicate = Profiles
     duplicate.map(profile => {
-        console.log('profile', profile)
+        // console.log('profile', profile)
         return (
             profile.members.map((prof, index) => {
-                return (console.log('prof', index))
+                return // (console.log('prof', index))
             })
         )
     })

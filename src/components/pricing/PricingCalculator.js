@@ -10,7 +10,7 @@ const PricingCalculator = () => {
   const maxRequests = 800000;
 
   const handleChangeStart = () => {
-    console.log('Change event started');
+    // console.log('Change event started');
   };
 
   const handleChange = (value) => {
@@ -18,7 +18,7 @@ const PricingCalculator = () => {
   };
 
   const handleChangeComplete = () => {
-    console.log('Change event completed');
+    // console.log('Change event completed');
   };
   return (
     <div className='wrapper api-content pricing-calc '>

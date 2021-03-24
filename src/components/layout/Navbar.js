@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   const toggleDropdown = (e) => {
-    console.log('id: ', e.target.getAttribute('id'))
+    // console.log('id: ', e.target.getAttribute('id'))
     e.currentTarget.lastChild.classList.toggle('flip-v');
     if (dropdownId !== e.currentTarget.id) {
       setDropdownId(e.currentTarget.id);

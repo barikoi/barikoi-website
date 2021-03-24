@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const NearByList = ({ nearby }) => {
 
   const check = ( index ) => {
-    console.log('item clicked', index)
+    // console.log('item clicked', index)
   }
   const nearByList =
     nearby &&
