@@ -65,18 +65,18 @@ export const Profiles = [
                 imgSrc: require('../../assets/team-profile-photos/rilus.webp')
             },
             {
-                name: 'Golam Rabbi',
-                designation: 'Jr Software Engineer',
-                type: 'Back-End',
-                linkedin: 'https://www.linkedin.com/in/golam-rabbi-21564517a/',
-                imgSrc: require('../../assets/team-profile-photos/rabbi.webp')
-            },
-            {
                 name: 'Rafiqul Islam Rafi',
                 designation: 'Software Engineer',
                 type: 'Back-End',
                 linkedin: 'https://linkedin.com/in/rafiqul-islam-a73886135/',
                 imgSrc: require('../../assets/team-profile-photos/rafi.webp')
+            },
+            {
+                name: 'Golam Rabbi',
+                designation: 'Jr Software Engineer',
+                type: 'Back-End',
+                linkedin: 'https://www.linkedin.com/in/golam-rabbi-21564517a/',
+                imgSrc: require('../../assets/team-profile-photos/rabbi.webp')
             },
             {
                 name: 'Habibullah Tanoy',
