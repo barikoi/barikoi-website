@@ -59,7 +59,7 @@ export const Profiles = [
             },
             {
                 name: 'Rilus Mahmud',
-                designation: 'Jr Software Engineer',
+                designation: 'Software Engineer',
                 type: 'Back-End',
                 linkedin: 'https://www.linkedin.com/in/rilusmahmud/',
                 imgSrc: require('../../assets/team-profile-photos/rilus.webp')
@@ -73,7 +73,7 @@ export const Profiles = [
             },
             {
                 name: 'Rafiqul Islam Rafi',
-                designation: 'Jr Software Engineer',
+                designation: 'Software Engineer',
                 type: 'Back-End',
                 linkedin: 'https://linkedin.com/in/rafiqul-islam-a73886135/',
                 imgSrc: require('../../assets/team-profile-photos/rafi.webp')
