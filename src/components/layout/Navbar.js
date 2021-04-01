@@ -77,70 +77,9 @@ const Navbar = () => {
           className={`show-desktop hide-mobile ${isOpen ? ' toggle-nav ' : ' '
             }`}
         >
-          {/* <li
-            
-          >
-            <div className='nav-list' id='1' onClick={toggleDropdown} onMouseOver={mouseEnter}
-            onMouseLeave={mouseLeave}>
-              <Link id='10'>Products</Link>
-              <FontAwesomeIcon
-                icon='chevron-circle-down'
-                size='lg'
-                color='black'
-                className='transition-rotate nav-icon hide-desktop'
-              />
-            </div>
-
-            {
-              isHovered && hoverIndex === '10' &&
-              <div
-                className={` dropdown-nav ${dropdownId === '10' || hoverIndex === '10' ? 'open-dropdown ' : 'hide-dropdown'
-                  }`}
-                //ref={node}
-              >
-                <li className='dropdown-list'>
-                  {/* <div className='nav-product'>
-                  <div className='display-col'>
-
-                    <div className='display-row-margin'>
-                      <NavBarProduct link='/api' title='API' details='Something about this product' />
-                      <NavBarProduct link='/rupantor' title='Rupantor' details='Something about this product' />
-                    </div>
-
-                    <div className='display-row-margin'>
-                      <a href='https://map.barikoi.xyz/'>
-                      <NavBarProduct title='Barikoi 360' details='Something about this product' />
-                      </a>
-                      
-                      <NavBarProduct link='/urban-engine' title='Urban Engine' details='Something about this product' />
-                    </div>
-
-                    <div className='display-row'>
-                      <NavBarProduct link='/verify' title='Verify' details='Something about this product' />
-                      <NavBarProduct link='/trace' title='Trace' details='Something about this product' />
-                    </div>
-
-                  </div>
-                </div> */}
-                  {/* <Link to='/api'>API</Link>
-                  <Link to='/rupantor'>Rupantor</Link>
-                  <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
-                  <Link to='/urban-engine'>Urban Engine</Link>
-                  <Link to='/verify'>Verify</Link>
-                  <Link to='/trace'>Trace</Link> */}
-
-                  
-                    
-                  
-
-                {/* </li>
-              </div>
-            }
-          </li> */} 
-
-          <li 
+          <li
             onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}            
+            onMouseLeave={mouseLeave}
           >
             <div className='nav-list' id='1' onClick={toggleDropdown}>
               <Link id='1'>Products</Link>
@@ -151,18 +90,102 @@ const Navbar = () => {
                 className='transition-rotate nav-icon hide-desktop'
               />
             </div>
-            {
+
+            <div
+              className={`dropdown-nav ${dropdownId === '1' || hoverIndex === '1' ? 'open-dropdown ' : 'hide-dropdown'
+                }`}
+            >
+              {
+                isHovered &&
+                <li className='dropdown-list'>
+                  <div className='nav-product hide-mobile show-desktop'>
+                    <div className='display-col'>
+
+                    <NavBarProduct       
+                        link='/api'
+                        id='1'
+                        title='API'
+                        details='Localized Location API for developers'
+                        imgSrc={require('../../assets/products-icons/api.png')}
+                      />
+                      <NavBarProduct
+                        link='/rupantor'
+                        id='2'
+                        title='Rupantor'
+                        details='AI enabled geocoder for location search'
+                        imgSrc={require('../../assets/products-icons/rupantor.png')}
+                      />
+                      <NavBarProduct
+                        link='https://map.barikoi.xyz/'
+                        title='Barikoi Drishty'
+                        details='360 imagery for service '
+                        imgSrc={require('../../assets/products-icons/barikoi-360.png')}
+                      />
+
+                      <NavBarProduct
+                        link='/urban-engine'
+                        title='Urban Engine'
+                        details='Operations System for cities'
+                        imgSrc={require('../../assets/products-icons/urban_city.png')}
+                      />
+                      <NavBarProduct
+                        link='/verify'
+                        title='Verify'
+                        details='Tech enable verification service'
+                        imgSrc={require('../../assets/products-icons/verify.png')} />
+                      <NavBarProduct
+                        link='/trace'
+                        title='Trace'
+                        details='Real time tracking platform'
+                        imgSrc={require('../../assets/products-icons/trace.png')}
+                      />
+                      
+
+                      {/* <div className='display-row'>
+                        <NavBarProduct link='/verify' title='Verify' details='Tech enable verification service' imgSrc={require('../../assets/products-icons/verify.png')} />
+                        <NavBarProduct link='/trace' title='Trace' details='Real time tracking platform' imgSrc={require('../../assets/products-icons/trace.png')} />
+                      </div> */}
+
+                    </div>
+                  </div>
+                  {/* <li className='hide-desktop dropdown-list'> */}
+                    <Link to='/api' className='hide-desktop'>API</Link>
+                    <Link to='/rupantor' className='hide-desktop'>Rupantor</Link>
+                    <a href='https://map.barikoi.xyz/' className='hide-desktop'>Barikoi 360</a>
+                    <Link to='/urban-engine' className='hide-desktop'>Urban Engine</Link>
+                    <Link to='/verify' className='hide-desktop'>Verify</Link>
+                    <Link to='/trace' className='hide-desktop'>Trace</Link>
+                  {/* </li> */}
+                </li>
+              }
+            </div>
+          </li>
+
+          {/* <li 
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}            
+          > */}
+          {/* <div className='nav-list' id='1' onClick={toggleDropdown}>
+              <Link id='1'>Products</Link>
+              <FontAwesomeIcon
+                icon='chevron-circle-down'
+                size='lg'
+                color='black'
+                className='transition-rotate nav-icon hide-desktop'
+              />
+            </div> */}
+          {/* {
               isHovered &&
                 <div
                   className={` dropdown-nav ${dropdownId === '1' || hoverIndex === '1' ? 'open-dropdown ' : 'hide-dropdown'
                   }`}
-                >
-                  {/* <li className='dropdown-list'>
+                > */}
+          {/* <li className='dropdown-list'>
                     <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
                     <a href='https://medium.com/@barikoibd'>Tutorial</a>
                   </li> */}
 
-                  <li className='dropdown-list'>
+          {/* <li className='dropdown-list'>
                     <Link to='/api'>API</Link>
                     <Link to='/rupantor'>Rupantor</Link>
                     <a href='https://map.barikoi.xyz/'>Barikoi 360</a>
@@ -171,10 +194,10 @@ const Navbar = () => {
                     <Link to='/trace'>Trace</Link>
                   </li>
                 </div>
-            }
+            } */}
 
 
-            {/* <div className='nav-list' id='2'>
+          {/* <div className='nav-list' id='2'>
               <Link id='10'>Developer</Link>
               <FontAwesomeIcon
                 icon='chevron-circle-down'
@@ -193,12 +216,12 @@ const Navbar = () => {
               </div>
             </div>
             } */}
-          </li>
+          {/* </li> */}
 
 
-          <li 
+          <li
             onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}            
+            onMouseLeave={mouseLeave}
           >
             <div className='nav-list' id='2' onClick={toggleDropdown}>
               <Link id='2'>Developer</Link>
@@ -211,22 +234,22 @@ const Navbar = () => {
             </div>
             {
               isHovered &&
-                <div
-                  className={` dropdown-nav ${dropdownId === '2' || hoverIndex === '2' ? 'open-dropdown ' : 'hide-dropdown'
+              <div
+                className={` dropdown-nav ${dropdownId === '2' || hoverIndex === '2' ? 'open-dropdown ' : 'hide-dropdown'
                   }`}
-                >
-                  <li className='dropdown-list'>
-                    <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
-                    <a href='https://medium.com/@barikoibd'>Tutorial</a>
-                  </li>
-                </div>
+              >
+                <li className='dropdown-list'>
+                  <a href='https://docs.barikoi.com/docs/intro/'>Documentation</a>
+                  <a href='https://medium.com/@barikoibd'>Tutorial</a>
+                </li>
+              </div>
             }
           </li>
 
 
           <li
             onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave} 
+            onMouseLeave={mouseLeave}
           >
             <div className='nav-list' id='3' onClick={toggleDropdown}>
               <Link id='3'>Pricing</Link>
@@ -238,15 +261,15 @@ const Navbar = () => {
               />
             </div>
             {
-              isHovered && 
+              isHovered &&
               <div
-              className={` dropdown-nav ${dropdownId === '3' || hoverIndex === '3' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
+                className={` dropdown-nav ${dropdownId === '3' || hoverIndex === '3' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
               >
                 <li className='dropdown-list'>
                   <Link to='/pricing'>Location API Pricing</Link>
                 </li>
-            </div>
+              </div>
             }
           </li>
 
@@ -255,11 +278,11 @@ const Navbar = () => {
               <Link to='/search'>Search</Link>
             </div>
           </li>
-          
+
           {/* About us */}
           <li
             onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave} 
+            onMouseLeave={mouseLeave}
           >
             <div className='nav-list' id='5' onClick={toggleDropdown}>
               <Link id='5'>About Us</Link>
@@ -271,17 +294,17 @@ const Navbar = () => {
               />
             </div>
             {
-              isHovered && 
+              isHovered &&
               <div
-              className={` dropdown-nav ${dropdownId === '5' || hoverIndex === '5' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
-              > 
+                className={` dropdown-nav ${dropdownId === '5' || hoverIndex === '5' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
+              >
                 <li className='dropdown-list'>
-                    <Link to='/ourteam'>Our Team</Link>
+                  <Link to='/ourteam'>Our Team</Link>
                   {/* <div onClick={() => { window.location.href = '/ourteam' }}>Our team</div> */}
                   <Link to='/ourcompany'>Our Company</Link>
                 </li>
-            </div>
+              </div>
             }
           </li>
 
@@ -299,10 +322,10 @@ const Navbar = () => {
               />
             </div>
             {
-              isHovered && 
+              isHovered &&
               <div
-              className={` dropdown-nav ${dropdownId === '6' || hoverIndex === '6' ? 'open-dropdown ' : 'hide-dropdown'
-                }`}
+                className={` dropdown-nav ${dropdownId === '6' || hoverIndex === '6' ? 'open-dropdown ' : 'hide-dropdown'
+                  }`}
               >
                 <li className='dropdown-list'>
                   <a href='https://developer.barikoi.com/'>Login</a>
@@ -319,5 +342,9 @@ const Navbar = () => {
     </header>
   );
 };
+
+const check = {
+  border: '1px solide red',
+}
 
 export default withRouter(Navbar);
