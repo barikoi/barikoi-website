@@ -270,6 +270,7 @@ header {
 
         &:hover {
           background-color: #e0dede;
+          border-radius: 4px;
         }
       }
     }
@@ -290,6 +291,11 @@ header {
     display: flex;
     flex-direction: row;
   }
+  .display-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .display-row-margin {
     display: flex;
     flex-direction: row;
@@ -304,11 +310,12 @@ header {
   }
   
   .nav-image {
-    padding: 12px;
-    border: 1px solid green;
-    border-radius: 5px;
+    // padding: 8px;
+    // border: 1px solid green;
+    // border-radius: 5px;
     img {
-      width: 32px;
+      width: 44px;
+      height: 44px;
     }
   }
   .font-w-400 {
