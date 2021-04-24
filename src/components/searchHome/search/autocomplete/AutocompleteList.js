@@ -18,7 +18,7 @@ const AutocompleteList = ({ place, getPlace, setTyping, text, setText }) => {
   })
   let address = newAddr && newAddr.length > 1 ? newAddr.slice(1, newAddr.length).join(',') : newAddr.toString();
   let sub = place && place.subType ? place.subType.split(',') : null
-  let subTypes = sub.length > 3 ? sub[0]+', '+sub[1]+', '+sub[2] : sub.join(', ')
+  let subTypes = sub && sub.length > 3 ? sub[0]+', '+sub[1]+', '+sub[2] : sub && sub.join(', ')
  
   const handleClick = (e) => {
     getPlace(place.uCode);
