@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import './styles/App.scss';
 
@@ -42,6 +42,9 @@ const App = () => {
           <Route exact path='/ourteam' component={OurTeam} />
           <Route exact path='/termsandservices' component={TermsAndServices} />
           <Route exact path='/ourcompany' component={OurCompany} />
+          <Route path='*'>
+            <Redirect to='/' />
+          </Route>
         </Switch>
       </Fragment>
     </Provider>
